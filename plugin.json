@@ -1,6 +1,6 @@
 {
   "name": "flutter-cursor-plugin",
-  "version": "1.6.1",
+  "version": "1.7.0",
   "description": "Open-source Cursor plugin for end-to-end Flutter development and testing with Dart MCP, Figma MCP, practical architecture patterns, and reliable test workflows.",
   "author": "Aleksandr Lozhkovoi",
   "license": "MIT",
@@ -36,6 +36,7 @@
     "security",
     "secrets scanner",
     "gitleaks",
+    "claude-code-security-review",
     "e2e",
     "page-object",
     "mocktail",

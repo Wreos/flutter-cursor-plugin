@@ -1,0 +1,30 @@
+name: Security Review
+
+permissions:
+  pull-requests: write
+  contents: read
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 2
+
+      - name: Run Claude security review
+        uses: anthropics/claude-code-security-review@main
+        with:
+          comment-pr: true
+          claude-api-key: ${{ secrets.CLAUDE_API_KEY }}
+          # Optional:
+          # upload-results: true
+          # exclude-directories: "build,.dart_tool"
+          # custom-security-scan-instructions: ".claude/security/custom_scan_instructions.md"
+          # false-positive-filtering-instructions: ".claude/security/custom_false_positive_filtering.md"

@@ -44,3 +44,4 @@ Use this checklist before tagging a public release.
 - Security review flow is documented (`docs/security-audit-checklist.md`).
 - `/security-review` command and security skill exist and are linked from README.
 - Official security references are included and up to date.
+- Optional GitHub Action template exists for PR security reviews (`templates/github_actions_security_review.yml`).

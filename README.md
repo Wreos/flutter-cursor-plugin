@@ -59,6 +59,7 @@ Open-source Cursor plugin for production Flutter development and testing.
 - **Dart MCP**: use for analysis, fix suggestions, formatting guidance, and project-aware Dart/Flutter workflows.
 - **Figma MCP**: use when translating Figma nodes/screens to Flutter UI with higher visual fidelity.
 - **Effective Dart**: align implementation with the official guidance at https://dart.dev/effective-dart.
+- **Claude `/security-review` parity**: security workflow mirrors `anthropics/claude-code-security-review` patterns (diff-aware + false-positive filtering).
 
 ## Official documentation
 
@@ -67,6 +68,7 @@ Open-source Cursor plugin for production Flutter development and testing.
 - Firebase setup for Flutter: https://firebase.google.com/docs/flutter/setup
 - Android App Bundle guide: https://developer.android.com/guide/app-bundle
 - App Store Connect submission: https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-app
+- Claude Code Security Review: https://github.com/anthropics/claude-code-security-review
 
 ## Requirements
 

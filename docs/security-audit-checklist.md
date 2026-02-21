@@ -34,7 +34,13 @@ This checklist is mandatory for every code review flow.
 - Define immediate fixes for high/critical findings.
 - Add regression checks to CI for recurring issues.
 
-## 6) OWASP MASVS baseline (mobile)
+## 6) Claude /security-review parity
+
+- Start with pending changes (diff-aware review) before broad repo scan.
+- Keep findings actionable via false-positive filtering.
+- Output should include severity, impact, and concrete fix guidance.
+
+## 7) OWASP MASVS baseline (mobile)
 
 - Cover at least: ARCH, STORAGE, CRYPTO, AUTH, NETWORK, PLATFORM, CODE.
 - Document which MASVS areas were checked in the review result.
@@ -45,3 +51,4 @@ This checklist is mandatory for every code review flow.
 - OWASP MASVS: https://mas.owasp.org/MASVS/
 - Google Play app security best practices: https://developer.android.com/privacy-and-security/security-best-practices
 - Apple security resources: https://developer.apple.com/security/
+- Anthropic Claude Code Security Review: https://github.com/anthropics/claude-code-security-review

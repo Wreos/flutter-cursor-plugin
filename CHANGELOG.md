@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.7.0
+
+- Injected integration patterns from `anthropics/claude-code-security-review` into `/security-review` workflow.
+- Updated security skill/command to enforce:
+  - diff-aware first pass on pending changes
+  - false-positive filtering for actionable output
+  - severity + remediation-focused reporting
+- Added GitHub Actions security review template:
+  - `templates/github_actions_security_review.yml`
+- Updated README and checklists with official Anthropic security-review reference.
+
 ## 1.6.1
 
 - Enforced security checks on every code review.
