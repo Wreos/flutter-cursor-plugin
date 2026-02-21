@@ -28,6 +28,7 @@ Use this checklist before tagging a public release.
 - Repository description, topics, and social preview are configured.
 - First release tag and GitHub Release notes are prepared.
 - Release automation workflow exists and is documented (`.github/workflows/release-automation.yml`, `docs/release-automation.md`).
+- Pre-release plugin enable instructions exist for users (`docs/pre-release-enable-plugin.md`).
 
 ## Mobile publication readiness
 

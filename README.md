@@ -12,6 +12,9 @@ Open-source Cursor plugin for production Flutter development and testing.
    - `review-flutter-code` for risk-focused review with mandatory security checks.
 4. Use `prepare-mobile-release` and `setup-mobile-github-pipeline` before shipping Android/iOS builds.
 
+Pre-release install:
+- If plugin is not in Marketplace yet, follow `docs/pre-release-enable-plugin.md`.
+
 ## Value in 5 minutes
 
 ![5-minute demo flow](assets/demo-5min-flow.svg)
