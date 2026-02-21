@@ -8,6 +8,7 @@ Use this checklist before tagging a public release.
 - README clearly explains scope, commands, agents, and MCP requirements.
 - Changelog includes the release notes for the target version.
 - Command naming and aliases are documented (`docs/command-namespacing.md`).
+- Reference example repository is linked (`https://github.com/Wreos/flutter-cursor-plugin-example`).
 
 ## Quality
 

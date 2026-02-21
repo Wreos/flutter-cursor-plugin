@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added reference example repository for project structure and tests:
+  - https://github.com/Wreos/flutter-cursor-plugin-example
 - Added pre-release enable guide (`docs/pre-release-enable-plugin.md`) with repository install and manual workspace settings options.
 
 ## 1.10.0

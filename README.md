@@ -40,6 +40,9 @@ Three ready-to-run scenarios:
 3. Release readiness:
    - `prepare-mobile-release` -> `setup-mobile-github-pipeline`
 
+Reference project layout:
+- https://github.com/Wreos/flutter-cursor-plugin-example
+
 ## Manifest and compatibility
 
 - Canonical manifest: `.cursor-plugin/plugin.json` (schema-aligned for Cursor plugins).
@@ -74,6 +77,7 @@ Three ready-to-run scenarios:
 - **Release checklist**: `docs/official-release-checklist.md` for official/public release prep.
 - **Release automation**: `docs/release-automation.md` for semver bump, changelog cut, tag, and GitHub Release publishing.
 - **Security posture**: `docs/security-posture.md` for `/security-review` scope, false-positive handling, and CI integration.
+- **Reference Flutter app layout**: https://github.com/Wreos/flutter-cursor-plugin-example
 - **Agents**
   - `flutter-app-builder` (general Flutter implementation)
   - `flutter-code-reviewer`
