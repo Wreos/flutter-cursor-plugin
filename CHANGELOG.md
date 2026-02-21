@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.8.0
+
 - Added canonical Cursor manifest at `.cursor-plugin/plugin.json` aligned to Cursor plugin schema.
 - Added plugin-level MCP configuration at `mcp.json` for Dart MCP (`dart mcp-server`).
 - Added repository CI validation workflow:
@@ -18,6 +20,7 @@
   - issue templates for bug/feature/upgrade requests
   - PR template with verification and rollback sections
 - Added monorepo/workspace usage guide (`docs/monorepo-workspace-guide.md`) and linked it from README/CONTRIBUTING.
+- Added doc link health CI workflow (`.github/workflows/doc-link-health.yml`) to validate official documentation links on PRs, `main`, and weekly schedule.
 - Added API stability CI guard (`.github/workflows/api-stability.yml`) to enforce semver + changelog updates when `commands/skills/agents/rules` change.
 
 ## 1.7.0
