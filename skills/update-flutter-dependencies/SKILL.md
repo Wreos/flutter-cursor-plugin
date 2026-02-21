@@ -14,9 +14,10 @@ Use this skill for SDK and package upgrades that must stay stable and reviewable
    - `flutter doctor -v`
    - `flutter pub get`
    - baseline checks (`flutter analyze` + impacted tests)
-2. Upgrade Flutter SDK:
+2. If Flutter SDK upgrade is in scope, upgrade Flutter SDK:
    - `flutter upgrade`
    - record updated `flutter --version`
+   - otherwise, keep the current SDK pinned and continue with package updates only
 3. Inspect package surface:
    - `flutter pub outdated`
    - identify major updates and likely breaking packages
