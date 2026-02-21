@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.8.0
+
 - Added canonical Cursor manifest at `.cursor-plugin/plugin.json` aligned to Cursor plugin schema.
 - Added plugin-level MCP configuration at `mcp.json` for Dart MCP (`dart mcp-server`).
 - Added repository CI validation workflow:
