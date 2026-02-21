@@ -41,13 +41,13 @@ if [[ "${head_root_version}" == "${base_root_version}" && "${head_canonical_vers
   exit 1
 fi
 
-if ! git diff --name-only "${diff_range}" | rg -q '^CHANGELOG\.md$'; then
+if ! git diff --name-only "${diff_range}" | grep -Eq '^CHANGELOG\.md$'; then
   echo "API surface changed but CHANGELOG.md was not updated."
   exit 1
 fi
 
 breaking_change=false
-if echo "${api_name_status}" | rg -q '^(D|R[0-9]*)\s'; then
+if echo "${api_name_status}" | grep -Eq '^(D|R[0-9]+)[[:space:]]'; then
   breaking_change=true
 fi
 
@@ -81,7 +81,7 @@ if [[ "${breaking_change}" == true ]]; then
     exit 1
   fi
 
-  if ! git diff -U0 "${diff_range}" -- CHANGELOG.md | rg -qi '^\+.*breaking'; then
+  if ! git diff -U0 "${diff_range}" -- CHANGELOG.md | grep -Eiq '^\+.*breaking'; then
     echo "Breaking API change detected; add a CHANGELOG line that includes the word 'breaking'."
     exit 1
   fi

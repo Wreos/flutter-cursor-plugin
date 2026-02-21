@@ -126,7 +126,7 @@ Three ready-to-run scenarios:
 - Claude Code Security Review: https://github.com/anthropics/claude-code-security-review
 - Cursor plugin schema: https://raw.githubusercontent.com/cursor/plugins/main/schemas/plugin.schema.json
 - Flutter MCP server docs: https://docs.flutter.dev/ai/mcp-server
-- Flutter Cursor + AI rules docs: https://docs.flutter.dev/ai/cursor
+- Flutter AI docs: https://docs.flutter.dev/ai
 
 ## Requirements
 

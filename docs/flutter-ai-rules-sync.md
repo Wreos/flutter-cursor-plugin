@@ -38,4 +38,4 @@ scripts/sync_official_flutter_ai_rules.sh 4k
 - https://raw.githubusercontent.com/flutter/flutter/main/docs/rules/rules_10k.md
 - https://raw.githubusercontent.com/flutter/flutter/main/docs/rules/rules_4k.md
 - https://raw.githubusercontent.com/flutter/flutter/main/docs/rules/rules_1k.md
-- https://docs.flutter.dev/ai/cursor
+- https://docs.flutter.dev/ai
