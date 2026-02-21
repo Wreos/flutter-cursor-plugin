@@ -2,10 +2,10 @@
 Describe what changed and why.
 
 ## What changed
-- 
+-
 
 ## How to verify
-- 
+-
 
 ## Risk assessment
 - Risk level:
