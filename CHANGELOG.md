@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added dedicated security posture documentation (`docs/security-posture.md`) with `/security-review` scope, false-positive handling, and CI integration guidance.
 - Added a "Value in 5 minutes" demo section to `README.md` with one-prompt flow and three copy-ready scenarios.
 - Added visual demo artifact `assets/demo-5min-flow.svg` for quick onboarding value proof.
 
