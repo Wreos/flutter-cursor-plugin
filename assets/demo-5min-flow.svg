@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">flutter-cursor-plugin 5 minute demo flow</title>
+  <desc id="desc">Feature implementation to tests to security review in three quick steps.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <style>
+      .card { fill:#ffffff; rx:16; ry:16; }
+      .title { font: 700 26px Arial, sans-serif; fill:#e2e8f0; }
+      .subtitle { font: 500 16px Arial, sans-serif; fill:#cbd5e1; }
+      .h { font: 700 18px Arial, sans-serif; fill:#0f172a; }
+      .p { font: 500 14px Arial, sans-serif; fill:#334155; }
+      .step { font: 700 12px Arial, sans-serif; fill:#0f172a; }
+      .arrow { stroke:#94a3b8; stroke-width:4; marker-end:url(#m); }
+    </style>
+    <marker id="m" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0,0 8,4 0,8" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#bg)" />
+  <text x="48" y="56" class="title">Value in 5 minutes</text>
+  <text x="48" y="84" class="subtitle">One prompt. Three plugin flows. Production-focused output.</text>
+
+  <rect x="48" y="126" width="336" height="220" class="card" />
+  <text x="72" y="160" class="step">STEP 1</text>
+  <text x="72" y="190" class="h">implement-flutter-feature</text>
+  <text x="72" y="220" class="p">Create a clean architecture feature</text>
+  <text x="72" y="244" class="p">with explicit boundaries and states.</text>
+
+  <rect x="432" y="126" width="336" height="220" class="card" />
+  <text x="456" y="160" class="step">STEP 2</text>
+  <text x="456" y="190" class="h">generate-flutter-tests</text>
+  <text x="456" y="220" class="p">Generate unit/widget/bloc tests</text>
+  <text x="456" y="244" class="p">for core paths and regressions.</text>
+
+  <rect x="816" y="126" width="336" height="220" class="card" />
+  <text x="840" y="160" class="step">STEP 3</text>
+  <text x="840" y="190" class="h">review-flutter-code</text>
+  <text x="840" y="220" class="p">Run risk and security review</text>
+  <text x="840" y="244" class="p">with severity-ranked findings.</text>
+
+  <line x1="392" y1="236" x2="420" y2="236" class="arrow" />
+  <line x1="776" y1="236" x2="804" y2="236" class="arrow" />
+
+  <text x="48" y="386" class="subtitle">Prompt: implement feature, generate tests, review risks, then apply fixes.</text>
+</svg>

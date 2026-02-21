@@ -12,6 +12,31 @@ Open-source Cursor plugin for production Flutter development and testing.
    - `review-flutter-code` for risk-focused review with mandatory security checks.
 4. Use `prepare-mobile-release` and `setup-mobile-github-pipeline` before shipping Android/iOS builds.
 
+## Value in 5 minutes
+
+![5-minute demo flow](assets/demo-5min-flow.svg)
+
+Use one copy-paste prompt to verify end-to-end value fast:
+
+```text
+Implement a profile editing feature in Flutter with clean architecture.
+Then generate widget and bloc tests for the new feature.
+Finally run a risk-focused review with security checks and list fixes by severity.
+```
+
+Expected outcome:
+- Feature scaffold + implementation plan from `implement-flutter-feature`.
+- Test generation flow from `generate-flutter-tests`.
+- Risk and security findings from `review-flutter-code` + `security-review`.
+
+Three ready-to-run scenarios:
+1. Feature + tests + review:
+   - `implement-flutter-feature` -> `generate-flutter-tests` -> `review-flutter-code`
+2. Dependency upgrade safety pass:
+   - `update-flutter-dependencies` -> `docs/dependency-upgrade-checklist.md`
+3. Release readiness:
+   - `prepare-mobile-release` -> `setup-mobile-github-pipeline`
+
 ## Manifest and compatibility
 
 - Canonical manifest: `.cursor-plugin/plugin.json` (schema-aligned for Cursor plugins).
