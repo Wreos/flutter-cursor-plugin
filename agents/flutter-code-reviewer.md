@@ -28,4 +28,5 @@ Dedicated agent for code review and conventions.
 1. Findings first, ordered by severity.
 2. File references for each finding.
 3. Security findings included explicitly.
-4. Residual risks/testing gaps summary.
+4. Validation evidence (commands/scans/checks performed).
+5. Residual risks/testing gaps summary.

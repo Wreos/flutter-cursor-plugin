@@ -80,6 +80,7 @@ Reference project layout:
 - **Reference Flutter app layout**: https://github.com/Wreos/flutter-cursor-plugin-example
 - **Prompt guardrails**: `docs/prompt-execution-guardrails.md`.
 - **Validation matrix**: `docs/validation-matrix.md`.
+- **Semantic quality gates**: `docs/semantic-quality-gates.md`.
 - **Agents**
   - `flutter-app-builder` (general Flutter implementation)
   - `flutter-code-reviewer`

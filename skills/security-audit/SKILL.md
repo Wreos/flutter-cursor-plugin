@@ -39,6 +39,12 @@ Every code review must include this security pass.
 - MASVS-CODE
 - MASVS-RESILIENCE (where applicable)
 
+## Guardrails
+
+- Do not claim scanner coverage that was not actually executed.
+- Keep findings actionable by filtering out non-exploitable or low-signal noise.
+- If scope is missing, stop and request it before running a full security assessment.
+
 ## Output format
 
 - Findings first (highest severity first).

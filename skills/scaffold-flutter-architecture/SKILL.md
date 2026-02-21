@@ -9,7 +9,7 @@ Use for new feature/module boilerplate generation.
 
 ## Workflow
 
-1. Confirm target feature name and selected pattern (BLoC, Riverpod, or clean layered default).
+1. Confirm target feature name and existing project state-management convention first (BLoC, Riverpod, Cubit, GetX, ValueNotifier, or clean layered default if none).
 2. Create folder structure with presentation/domain/data boundaries.
 3. Add state-management entry points (cubit/bloc/provider/notifier).
 4. Add repository and data source contracts.

@@ -1,0 +1,19 @@
+name: Semantic Prompt Quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  semantic-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate agent/skill structure
+        run: bash scripts/validate_agents_skills.sh
+
+      - name: Validate prompt semantics
+        run: bash scripts/validate_prompt_semantics.sh
