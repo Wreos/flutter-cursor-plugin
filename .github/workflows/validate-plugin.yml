@@ -1,0 +1,37 @@
+name: Validate Cursor Plugin
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install ajv-cli
+        run: npm i -g ajv-cli
+
+      - name: Fetch Cursor plugin schema
+        run: curl -sSL https://raw.githubusercontent.com/cursor/plugins/main/schemas/plugin.schema.json -o plugin.schema.json
+
+      - name: Validate canonical manifest
+        run: ajv validate -s plugin.schema.json -d .cursor-plugin/plugin.json --strict=false
+
+      - name: Validate required directories and files
+        run: |
+          test -d agents
+          test -d commands
+          test -d skills
+          test -d rules
+          test -f mcp.json
+          test -f README.md
+          test -f CHANGELOG.md
