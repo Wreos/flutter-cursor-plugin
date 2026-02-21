@@ -68,6 +68,7 @@ Three ready-to-run scenarios:
 ## Included assets
 
 - **Release checklist**: `docs/official-release-checklist.md` for official/public release prep.
+- **Release automation**: `docs/release-automation.md` for semver bump, changelog cut, tag, and GitHub Release publishing.
 - **Security posture**: `docs/security-posture.md` for `/security-review` scope, false-positive handling, and CI integration.
 - **Agents**
   - `flutter-app-builder` (general Flutter implementation)
@@ -168,6 +169,9 @@ Three ready-to-run scenarios:
 12. To sync official Flutter AI rules profiles (`10k`/`4k`/`1k`), use:
    - `sync-official-flutter-ai-rules`
    - `docs/flutter-ai-rules-sync.md`
+13. For automated release cut (version/changelog/tag/release), use:
+   - `.github/workflows/release-automation.yml`
+   - `docs/release-automation.md`
 
 Note: every code review flow includes mandatory security checks (OWASP MASVS-oriented).
 
