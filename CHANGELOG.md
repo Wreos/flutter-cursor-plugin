@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Added a "Value in 5 minutes" demo section to `README.md` with one-prompt flow and three copy-ready scenarios.
+- Added visual demo artifact `assets/demo-5min-flow.svg` for quick onboarding value proof.
+
 ## 1.8.0
 
 - Added canonical Cursor manifest at `.cursor-plugin/plugin.json` aligned to Cursor plugin schema.
