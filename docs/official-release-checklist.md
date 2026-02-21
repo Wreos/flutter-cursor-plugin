@@ -25,3 +25,9 @@ Use this checklist before tagging a public release.
 - `LICENSE`, `CONTRIBUTING.md`, and `CODE_OF_CONDUCT.md` are present.
 - Repository description, topics, and social preview are configured.
 - First release tag and GitHub Release notes are prepared.
+
+## Mobile publication readiness
+
+- Android/iOS release flow is documented (`docs/mobile-app-publishing-checklist.md`).
+- Publishing skill/command/agent exist and are linked from README.
+- Official references for Flutter/Android/Apple submission are included and up to date.

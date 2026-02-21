@@ -25,6 +25,7 @@ Open-source Cursor plugin for production Flutter development and testing.
   - `flutter-migration-refactor`
   - `flutter-debug-resolver`
   - `flutter-code-reviewer`
+  - `flutter-mobile-release-manager`
   - `flutter-test-writer`
   - `flutter-widget-test-writer`
   - `flutter-e2e-test-writer`
@@ -36,6 +37,7 @@ Open-source Cursor plugin for production Flutter development and testing.
   - `migrate-flutter-code`
   - `resolve-flutter-build-error`
   - `review-flutter-code`
+  - `prepare-mobile-release`
   - `write-widget-test`
   - `write-bloc-test`
   - `write-e2e-test`
@@ -45,6 +47,7 @@ Open-source Cursor plugin for production Flutter development and testing.
   - `rules/flutter-test-best-practices.mdc`
 - **Skills**
   - `skills/build-flutter-features/`
+  - `skills/release-mobile-apps/`
   - `skills/write-flutter-tests/`
 
 ## MCP integrations
@@ -70,7 +73,11 @@ Open-source Cursor plugin for production Flutter development and testing.
    - `migrate-flutter-code`
    - `resolve-flutter-build-error`
    - `review-flutter-code`
-6. Keep generated output aligned with plugin rules.
+6. For Android/iOS publication readiness use:
+   - `flutter-mobile-release-manager`
+   - `prepare-mobile-release`
+   - `docs/mobile-app-publishing-checklist.md`
+7. Keep generated output aligned with plugin rules.
 
 ## Top use cases
 
@@ -79,3 +86,4 @@ Open-source Cursor plugin for production Flutter development and testing.
 3. Migration and refactoring workflows (framework/API/state-management changes).
 4. Debug and error resolution for Dart/Android/iOS/dependency failures.
 5. Risk-focused code review against conventions and architecture rules.
+6. Android/iOS publishing readiness with official Flutter + store submission checklists.

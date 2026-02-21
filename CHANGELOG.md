@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.0
+
+- Added Android/iOS publishing readiness workflow:
+  - agent: `agents/flutter-mobile-release-manager.md`
+  - command: `commands/prepare-mobile-release.md`
+  - skill: `skills/release-mobile-apps/SKILL.md`
+  - checklist: `docs/mobile-app-publishing-checklist.md`
+- Integrated official source links for Flutter deployment, Android App Bundle, Play Console setup, and App Store Connect submission.
+- Updated plugin metadata keywords for release/publishing discoverability.
+
 ## 1.1.0
 
 - Added Top 5 production use-case coverage with dedicated agents, commands, and skills:
