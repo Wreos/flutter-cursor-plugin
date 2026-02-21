@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+- Added official Flutter AI rules sync workflow:
+  - command: `commands/sync-official-flutter-ai-rules.md`
+  - skill: `skills/sync-official-flutter-ai-rules/SKILL.md`
+  - docs: `docs/flutter-ai-rules-sync.md`
+  - sync script: `scripts/sync_official_flutter_ai_rules.sh`
+- Added synced official Flutter AI rules profiles:
+  - `rules/official/flutter-ai-rules-10k.mdc`
+  - `rules/official/flutter-ai-rules-4k.mdc`
+  - `rules/official/flutter-ai-rules-1k.mdc`
+  - active: `rules/flutter-official-ai-rules.mdc`
 - Added dedicated security posture documentation (`docs/security-posture.md`) with `/security-review` scope, false-positive handling, and CI integration guidance.
 - Added a "Value in 5 minutes" demo section to `README.md` with one-prompt flow and three copy-ready scenarios.
 - Added visual demo artifact `assets/demo-5min-flow.svg` for quick onboarding value proof.

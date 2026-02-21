@@ -19,6 +19,7 @@ Use this checklist before tagging a public release.
 
 - Dart MCP workflow is documented and referenced by relevant agents/commands.
 - Figma MCP workflow is documented for UI implementation paths.
+- Official Flutter AI rules sync workflow is documented (`docs/flutter-ai-rules-sync.md`).
 
 ## Open source readiness
 

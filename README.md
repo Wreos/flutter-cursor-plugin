@@ -87,6 +87,7 @@ Three ready-to-run scenarios:
   - `setup-mobile-github-pipeline`
   - `integrate-firebase`
   - `security-review`
+  - `sync-official-flutter-ai-rules`
   - `write-widget-test`
   - `write-bloc-test`
   - `write-e2e-test`
@@ -105,6 +106,7 @@ Three ready-to-run scenarios:
   - `skills/migrate-flutter-code/`
   - `skills/update-flutter-dependencies/`
   - `skills/security-audit/`
+  - `skills/sync-official-flutter-ai-rules/`
 
 ## MCP integrations
 
@@ -112,6 +114,7 @@ Three ready-to-run scenarios:
 - **Figma MCP**: use when translating Figma nodes/screens to Flutter UI with higher visual fidelity.
 - **Effective Dart**: align implementation with the official guidance at https://dart.dev/effective-dart.
 - **Claude `/security-review` parity**: security workflow mirrors `anthropics/claude-code-security-review` patterns (diff-aware + false-positive filtering).
+- **Official Flutter AI rules sync**: use `sync-official-flutter-ai-rules` to refresh upstream Flutter rules profiles.
 
 ## Official documentation
 
@@ -123,6 +126,7 @@ Three ready-to-run scenarios:
 - Claude Code Security Review: https://github.com/anthropics/claude-code-security-review
 - Cursor plugin schema: https://raw.githubusercontent.com/cursor/plugins/main/schemas/plugin.schema.json
 - Flutter MCP server docs: https://docs.flutter.dev/ai/mcp-server
+- Flutter AI docs: https://docs.flutter.dev/ai
 
 ## Requirements
 
@@ -161,6 +165,9 @@ Three ready-to-run scenarios:
    - `docs/dependency-upgrade-checklist.md`
 11. For monorepo/workspace setups, follow:
    - `docs/monorepo-workspace-guide.md`
+12. To sync official Flutter AI rules profiles (`10k`/`4k`/`1k`), use:
+   - `sync-official-flutter-ai-rules`
+   - `docs/flutter-ai-rules-sync.md`
 
 Note: every code review flow includes mandatory security checks (OWASP MASVS-oriented).
 
