@@ -19,6 +19,12 @@ Use for compiler/build/runtime failures.
 4. Apply smallest deterministic fix.
 5. Validate with rerun and impacted tests.
 
+## Guardrails
+
+- Do not propose a fix without a reproducible command or clear log evidence.
+- Keep fixes minimal and limited to the failing layer unless a cross-layer root cause is proven.
+- Call out unknowns explicitly instead of guessing when logs are incomplete.
+
 ## Output format
 
 - Root cause.

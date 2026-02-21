@@ -30,5 +30,5 @@ Main router for Flutter test tasks.
 
 1. Test type selected (widget/bloc/integration) and reason.
 2. Files changed and template used.
-3. Test commands run and pass/fail result.
+3. Validation commands run and pass/fail result.
 4. Remaining coverage gaps.

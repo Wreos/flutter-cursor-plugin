@@ -17,6 +17,11 @@
 - Added reference example repository for project structure and tests:
   - https://github.com/Wreos/flutter-cursor-plugin-example
 - Added pre-release enable guide (`docs/pre-release-enable-plugin.md`) with repository install and manual workspace settings options.
+- Added semantic prompt quality gates:
+  - `scripts/validate_prompt_semantics.sh`
+  - `.github/workflows/semantic-quality.yml`
+  - `docs/semantic-quality-gates.md`
+- Updated scaffold architecture guidance to prefer existing project state-management convention before selecting a pattern.
 
 ## 1.10.0
 

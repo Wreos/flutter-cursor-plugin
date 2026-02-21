@@ -27,6 +27,12 @@ Use for PR/diff/code review requests.
 - MASVS-PLATFORM: Android/iOS platform integration risks and exported surfaces.
 - MASVS-CODE: unsafe code patterns and hardcoded secrets.
 
+## Guardrails
+
+- Do not provide a deep review without explicit target scope (PR diff, range, or file list).
+- Tie each finding to concrete code evidence and expected behavioral impact.
+- Keep findings prioritized by severity and user risk, not by style preference.
+
 ## Output format
 
 - Findings first, ordered by severity.
