@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.0
+
+- First stable public release.
+- End-to-end Flutter development and testing workflow.
+- Includes Flutter feature implementation guidance with architecture best practices.
+- Includes Dart MCP and Figma MCP integrated workflows.
+- Includes unit/widget/bloc/Patrol E2E testing agents, skills, rules, and templates.
+- Includes open-source project docs and official release checklist.
+
 ## 0.3.0
 
 - Expanded plugin scope from testing-only to full Flutter development + testing.

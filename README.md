@@ -1,4 +1,4 @@
-# flutter-testing
+# flutter-cursor-plugin
 
 Open-source Cursor plugin for production Flutter development and testing.
 
