@@ -1,0 +1,26 @@
+name: Upgrade request
+description: Request support updates for Flutter, Dart MCP, Patrol, or dependency upgrade flows.
+title: "upgrade: "
+labels: ["upgrade"]
+body:
+  - type: input
+    id: target
+    attributes:
+      label: Upgrade target
+      placeholder: "e.g. Flutter stable latest, Patrol major, Dart MCP baseline"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Which plugin assets are affected?
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Required validation
+      description: Specify required analyze/test/build/security checks.
+    validations:
+      required: true
