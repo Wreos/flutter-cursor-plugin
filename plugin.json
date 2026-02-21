@@ -1,0 +1,8 @@
+{
+  "name": "flutter-testing",
+  "version": "0.2.0",
+  "description": "Open-source Cursor plugin for Dart/Flutter testing with subagents, templates, and practical best practices for unit, widget, and Patrol E2E tests.",
+  "author": "Aleksandr Lozhkovoi",
+  "license": "MIT",
+  "keywords": ["dart", "flutter", "testing", "bloc", "cubit", "widget-test", "patrol", "integration-test", "e2e", "page-object", "mocktail", "bloc_test"]
+}
