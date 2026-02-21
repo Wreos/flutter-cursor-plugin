@@ -22,3 +22,10 @@ Dedicated agent for code review and conventions.
 - Missing error handling.
 - Test gaps and brittle assertions.
 - Accessibility and localization risks.
+
+## Output expectations
+
+1. Findings first, ordered by severity.
+2. File references for each finding.
+3. Security findings included explicitly.
+4. Residual risks/testing gaps summary.

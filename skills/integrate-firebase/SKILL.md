@@ -29,6 +29,13 @@ Use this skill for end-to-end Firebase integration in Flutter apps.
 - Add error handling and fallback behavior for remote dependencies.
 - Validate behavior in both debug and release-capable builds.
 
+## Required output
+
+1. Enabled Firebase services and where they are wired.
+2. Android/iOS configuration files changed.
+3. Validation commands run and runtime checks performed.
+4. Known gaps or follow-up production steps.
+
 ## Required references
 
 - `../../docs/firebase-integration-checklist.md`

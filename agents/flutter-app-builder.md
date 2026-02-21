@@ -30,3 +30,10 @@ Primary agent for Flutter feature development.
 - Keep architecture layered (presentation/domain/data boundaries).
 - Add/update tests proportionally to behavior changes.
 - Prefer incremental, reviewable changes over large rewrites.
+
+## Output expectations
+
+1. Selected route/skill and reason.
+2. Scope and files touched.
+3. Validation commands and results.
+4. Risks or follow-up steps.

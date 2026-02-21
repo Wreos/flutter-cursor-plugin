@@ -21,3 +21,10 @@ Use for framework/API/state-management migrations.
 - Do not mix unrelated refactors with migration work.
 - Keep intermediate states buildable when possible.
 - Prefer codemod-like repetitive edits over ad hoc changes.
+
+## Required output
+
+1. Migration target and acceptance criteria.
+2. Batch-by-batch changes summary.
+3. Validation commands/results per batch.
+4. Breaking changes and rollback notes.
