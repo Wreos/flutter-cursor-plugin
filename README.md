@@ -68,6 +68,7 @@ Three ready-to-run scenarios:
 ## Included assets
 
 - **Release checklist**: `docs/official-release-checklist.md` for official/public release prep.
+- **Security posture**: `docs/security-posture.md` for `/security-review` scope, false-positive handling, and CI integration.
 - **Agents**
   - `flutter-app-builder` (general Flutter implementation)
   - `flutter-code-reviewer`
@@ -154,6 +155,7 @@ Three ready-to-run scenarios:
 8. For security audit and secrets scanning use:
    - `security-review`
    - `docs/security-audit-checklist.md`
+   - `docs/security-posture.md`
 9. Keep generated output aligned with plugin rules.
 10. For dependency upgrades, also follow:
    - `docs/dependency-upgrade-checklist.md`
