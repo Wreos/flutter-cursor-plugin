@@ -78,8 +78,8 @@ Reference project layout:
 - **Release automation**: `docs/release-automation.md` for semver bump, changelog cut, tag, and GitHub Release publishing.
 - **Security posture**: `docs/security-posture.md` for `/security-review` scope, false-positive handling, and CI integration.
 - **Reference Flutter app layout**: https://github.com/Wreos/flutter-cursor-plugin-example
-- **Output contract**: `docs/command-output-contract.md` for deterministic command response shape.
-- **Quality iterations report**: `docs/quality-iterations-2026-02-21.md`.
+- **Prompt guardrails**: `docs/prompt-execution-guardrails.md`.
+- **Validation matrix**: `docs/validation-matrix.md`.
 - **Agents**
   - `flutter-app-builder` (general Flutter implementation)
   - `flutter-code-reviewer`

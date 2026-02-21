@@ -13,4 +13,6 @@ Sync official Flutter AI rules into the plugin repository.
 3. Run `scripts/sync_official_flutter_ai_rules.sh <10k|4k|1k>`.
 4. Commit synced files under `rules/official/` and active file `rules/flutter-official-ai-rules.mdc`.
 
-99. Return final response using `../docs/command-output-contract.md`.
+Preconditions and guardrails:
+- Enforce `../docs/prompt-execution-guardrails.md` before execution.
+- Validate outcomes using `../docs/validation-matrix.md`.

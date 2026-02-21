@@ -10,5 +10,8 @@ Resolve a build or runtime failure.
 3. Apply smallest safe fix.
 4. Re-run failing command and impacted tests.
 5. Document root cause and prevention notes.
+6. Always report: reproduction command, root cause, and post-fix verification command output.
 
-99. Return final response using `../docs/command-output-contract.md`.
+Preconditions and guardrails:
+- Enforce `../docs/prompt-execution-guardrails.md` before execution.
+- Validate outcomes using `../docs/validation-matrix.md`.

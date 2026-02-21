@@ -66,6 +66,9 @@ awk '
   { print }
 ' "${out_dir}/flutter-ai-rules-${profile}.mdc" > "${active_rule}"
 
+# Align active profile with plugin policy: pick state management by project context.
+perl -0pi -e 's/\* \*\*State Management:\*\*\n  \* \*\*Pattern:\*\* Separate UI state \(ephemeral\) from App state\.\n  \* \*\*Native First:\*\* Use `ValueNotifier`, `ChangeNotifier`\.\n  \* \*\*Prohibited:\*\* NO Riverpod, Bloc, GetX unless explicitly requested\.\n  \* \*\*DI:\*\* Manual constructor injection or `provider` package if requested\./* **State Management:**\n  * **Pattern:** Separate UI state (ephemeral) from App state.\n  * **Project First:** Follow the existing project architecture and state-management choice.\n  * **Selection:** Use Riverpod\/Bloc\/Cubit\/GetX\/ValueNotifier based on project conventions, complexity, and team standards.\n  * **DI:** Keep dependencies explicit via constructor injection or project-standard DI./s' "${active_rule}"
+
 echo "Synced official Flutter AI rules."
 echo "Selected active profile: ${profile}"
 echo "Active rule: rules/flutter-official-ai-rules.mdc"

@@ -11,4 +11,6 @@ Create a new feature module scaffold.
 4. Build minimal complete skeleton first (UI + state + data boundaries).
 5. Add starter tests with `write-widget-test` / `write-bloc-test`.
 
-99. Return final response using `../docs/command-output-contract.md`.
+Preconditions and guardrails:
+- Enforce `../docs/prompt-execution-guardrails.md` before execution.
+- Validate outcomes using `../docs/validation-matrix.md`.

@@ -2,12 +2,14 @@
 
 ## Unreleased
 
-- Ran 10 command quality iterations and added reproducible audit:
-  - script: `scripts/quality_audit_commands.sh`
-  - report: `docs/quality-iterations-2026-02-21.md`
-- Added shared output contract for deterministic command responses:
-  - `docs/command-output-contract.md`
-- Updated all canonical commands to reference the output contract.
+- Hardened command prompts with shared execution guardrails:
+  - `docs/prompt-execution-guardrails.md`
+- Added deterministic validation guidance:
+  - `docs/validation-matrix.md`
+- Updated canonical commands and core skills for:
+  - explicit fail-fast behavior when required context is missing
+  - tighter scope control and deterministic validation requirements
+- Updated active official Flutter AI rule to choose state management by project conventions (Riverpod/Bloc/Cubit/GetX/ValueNotifier based on context).
 - Added reference example repository for project structure and tests:
   - https://github.com/Wreos/flutter-cursor-plugin-example
 - Added pre-release enable guide (`docs/pre-release-enable-plugin.md`) with repository install and manual workspace settings options.

@@ -12,5 +12,8 @@ Run structured Flutter code review.
 5. Include OWASP MASVS-focused mobile security checks.
 6. Prioritize findings by severity and regression risk.
 7. Include testing and accessibility checks.
+8. If no review target is provided (PR/diff/files), stop and request explicit scope.
 
-99. Return final response using `../docs/command-output-contract.md`.
+Preconditions and guardrails:
+- Enforce `../docs/prompt-execution-guardrails.md` before execution.
+- Validate outcomes using `../docs/validation-matrix.md`.

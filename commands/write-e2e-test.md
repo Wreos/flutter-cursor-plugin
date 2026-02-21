@@ -14,4 +14,6 @@ Create or update a Patrol E2E test.
 7. Keep credentials in `--dart-define` / `.patrol.env` (no hardcoded secrets).
 8. Run affected Patrol tests and fix failures.
 
-99. Return final response using `../docs/command-output-contract.md`.
+Preconditions and guardrails:
+- Enforce `../docs/prompt-execution-guardrails.md` before execution.
+- Validate outcomes using `../docs/validation-matrix.md`.

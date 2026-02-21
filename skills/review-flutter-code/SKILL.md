@@ -10,12 +10,13 @@ Use for PR/diff/code review requests.
 ## Workflow
 
 1. Review for correctness and behavioral regressions first.
-2. Check architecture boundaries and dependency direction.
-3. Check state-management misuse and async hazards.
-4. Check tests for missing cases and flakiness.
-5. Run security audit checks from `../security-audit/SKILL.md` for every review.
-6. Include OWASP MASVS-focused checks for mobile risk areas.
-7. Check accessibility/localization/performance basics.
+2. Require explicit review scope (PR diff, commit range, or file list) before deep review.
+3. Check architecture boundaries and dependency direction.
+4. Check state-management misuse and async hazards.
+5. Check tests for missing cases and flakiness.
+6. Run security audit checks from `../security-audit/SKILL.md` for every review.
+7. Include OWASP MASVS-focused checks for mobile risk areas.
+8. Check accessibility/localization/performance basics.
 
 ## Mandatory security scope (OWASP MASVS-oriented)
 

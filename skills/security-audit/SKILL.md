@@ -11,21 +11,22 @@ Every code review must include this security pass.
 
 ## Workflow
 
-1. Start diff-aware: review pending changes first, then expand to dependent context.
-2. Run repository-level secrets checks.
-3. Review code for high-risk patterns:
+1. Require explicit target scope (pending diff, PR range, or file set). If missing, request it first.
+2. Start diff-aware: review pending changes first, then expand to dependent context.
+3. Run repository-level secrets checks.
+4. Review code for high-risk patterns:
    - hardcoded credentials/tokens/keys
    - insecure storage or logging of sensitive data
    - missing TLS/certificate validation controls
    - unsafe deserialization / dynamic execution patterns
    - insufficient authz/authn checks in app/service boundaries
-4. Review mobile-specific concerns:
+5. Review mobile-specific concerns:
    - Android/iOS configuration leaks
    - debug flags/logging in release paths
    - weak handling of deep links/intent data
-5. Apply false-positive filtering (remove low-impact/no-exploitability noise).
-6. Classify findings by severity and exploitability.
-7. Provide minimal safe fixes and validation steps.
+6. Apply false-positive filtering (remove low-impact/no-exploitability noise).
+7. Classify findings by severity and exploitability.
+8. Provide minimal safe fixes and validation steps.
 
 ## OWASP MASVS coverage (required)
 

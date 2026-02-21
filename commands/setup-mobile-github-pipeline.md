@@ -11,4 +11,6 @@ Set up a mobile CI pipeline in GitHub Actions.
 4. Ensure pipeline runs analyze/tests before building artifacts.
 5. Validate generated APK/AAB artifacts and branch trigger strategy.
 
-99. Return final response using `../docs/command-output-contract.md`.
+Preconditions and guardrails:
+- Enforce `../docs/prompt-execution-guardrails.md` before execution.
+- Validate outcomes using `../docs/validation-matrix.md`.

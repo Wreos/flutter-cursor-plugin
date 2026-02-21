@@ -12,4 +12,6 @@ Create or update a widget test file.
 5. Prefer behavioral assertions (user action -> observable outcome, branch shown/hidden, verify side effects), not only style attributes.
 6. Run affected tests and fix failures.
 
-99. Return final response using `../docs/command-output-contract.md`.
+Preconditions and guardrails:
+- Enforce `../docs/prompt-execution-guardrails.md` before execution.
+- Validate outcomes using `../docs/validation-matrix.md`.
