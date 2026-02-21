@@ -34,7 +34,6 @@ download_rule() {
     echo "---"
     echo "description: Official Flutter AI rules profile (${profile_name}) synced from flutter/flutter."
     echo "alwaysApply: false"
-    echo "globs: [\"lib/**/*.dart\", \"test/**/*.dart\", \"**/*.dart\"]"
     echo "---"
     echo
     echo "<!--"
@@ -54,7 +53,18 @@ download_rule "${url_10k}" "${out_dir}/flutter-ai-rules-10k.mdc" "10k"
 download_rule "${url_4k}" "${out_dir}/flutter-ai-rules-4k.mdc" "4k"
 download_rule "${url_1k}" "${out_dir}/flutter-ai-rules-1k.mdc" "1k"
 
-cp "${out_dir}/flutter-ai-rules-${profile}.mdc" "${repo_root}/rules/flutter-official-ai-rules.mdc"
+active_rule="${repo_root}/rules/flutter-official-ai-rules.mdc"
+
+awk '
+  BEGIN { inserted = 0 }
+  /^alwaysApply: false$/ && inserted == 0 {
+    print
+    print "globs: [\"lib/**/*.dart\", \"test/**/*.dart\", \"**/*.dart\"]"
+    inserted = 1
+    next
+  }
+  { print }
+' "${out_dir}/flutter-ai-rules-${profile}.mdc" > "${active_rule}"
 
 echo "Synced official Flutter AI rules."
 echo "Selected active profile: ${profile}"
