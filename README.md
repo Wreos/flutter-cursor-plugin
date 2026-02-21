@@ -42,6 +42,7 @@ Three ready-to-run scenarios:
 - Canonical manifest: `.cursor-plugin/plugin.json` (schema-aligned for Cursor plugins).
 - Compatibility manifest kept for existing setups: `plugin.json`.
 - MCP auto-configuration: `mcp.json` (Dart MCP server).
+- Command namespace support: canonical commands plus `flutter:*` aliases.
 
 ## Compatibility matrix
 
@@ -172,6 +173,8 @@ Three ready-to-run scenarios:
 13. For automated release cut (version/changelog/tag/release), use:
    - `.github/workflows/release-automation.yml`
    - `docs/release-automation.md`
+14. For command namespacing/aliases (`flutter:*`), see:
+   - `docs/command-namespacing.md`
 
 Note: every code review flow includes mandatory security checks (OWASP MASVS-oriented).
 
