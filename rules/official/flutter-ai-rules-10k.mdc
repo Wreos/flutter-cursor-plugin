@@ -1,3 +1,9 @@
+---
+description: Official Flutter AI rules profile (10k) synced from flutter/flutter.
+alwaysApply: false
+globs: ["lib/**/*.dart", "test/**/*.dart", "**/*.dart"]
+---
+
 <!--
 Synced from official Flutter AI rules.
 Source: https://raw.githubusercontent.com/flutter/flutter/main/docs/rules/rules_10k.md

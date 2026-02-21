@@ -31,6 +31,12 @@ download_rule() {
   curl -fsSL "${source_url}" -o "${tmp_file}"
 
   {
+    echo "---"
+    echo "description: Official Flutter AI rules profile (${profile_name}) synced from flutter/flutter."
+    echo "alwaysApply: false"
+    echo "globs: [\"lib/**/*.dart\", \"test/**/*.dart\", \"**/*.dart\"]"
+    echo "---"
+    echo
     echo "<!--"
     echo "Synced from official Flutter AI rules."
     echo "Source: ${source_url}"
