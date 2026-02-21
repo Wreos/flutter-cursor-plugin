@@ -31,3 +31,9 @@ Use this checklist before tagging a public release.
 - Android/iOS release flow is documented (`docs/mobile-app-publishing-checklist.md`).
 - Publishing skill/command/agent exist and are linked from README.
 - Official references for Flutter/Android/Apple submission are included and up to date.
+
+## Firebase readiness
+
+- Firebase integration flow is documented (`docs/firebase-integration-checklist.md`).
+- Firebase skill/command/agent exist and are linked from README.
+- Official FlutterFire/Firebase setup references are included and up to date.

@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.3.0
+
+- Added Firebase integration workflow:
+  - agent: `agents/flutter-firebase-integrator.md`
+  - command: `commands/integrate-firebase.md`
+  - skill: `skills/integrate-firebase/SKILL.md`
+  - checklist: `docs/firebase-integration-checklist.md`
+- Linked Firebase workflow into main app-builder routing and official release checklist.
+- Updated plugin metadata keywords and README usage for Firebase support.
+
 ## 1.2.0
 
 - Added Android/iOS publishing readiness workflow:

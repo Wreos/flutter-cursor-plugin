@@ -26,6 +26,7 @@ Open-source Cursor plugin for production Flutter development and testing.
   - `flutter-debug-resolver`
   - `flutter-code-reviewer`
   - `flutter-mobile-release-manager`
+  - `flutter-firebase-integrator`
   - `flutter-test-writer`
   - `flutter-widget-test-writer`
   - `flutter-e2e-test-writer`
@@ -38,6 +39,7 @@ Open-source Cursor plugin for production Flutter development and testing.
   - `resolve-flutter-build-error`
   - `review-flutter-code`
   - `prepare-mobile-release`
+  - `integrate-firebase`
   - `write-widget-test`
   - `write-bloc-test`
   - `write-e2e-test`
@@ -48,6 +50,7 @@ Open-source Cursor plugin for production Flutter development and testing.
 - **Skills**
   - `skills/build-flutter-features/`
   - `skills/release-mobile-apps/`
+  - `skills/integrate-firebase/`
   - `skills/write-flutter-tests/`
 
 ## MCP integrations
@@ -55,6 +58,14 @@ Open-source Cursor plugin for production Flutter development and testing.
 - **Dart MCP**: use for analysis, fix suggestions, formatting guidance, and project-aware Dart/Flutter workflows.
 - **Figma MCP**: use when translating Figma nodes/screens to Flutter UI with higher visual fidelity.
 - **Effective Dart**: align implementation with the official guidance at https://dart.dev/effective-dart.
+
+## Official documentation
+
+- Flutter Android deployment: https://docs.flutter.dev/deployment/android
+- Flutter iOS deployment: https://docs.flutter.dev/deployment/ios
+- Firebase setup for Flutter: https://firebase.google.com/docs/flutter/setup
+- Android App Bundle guide: https://developer.android.com/guide/app-bundle
+- App Store Connect submission: https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-app
 
 ## Requirements
 
@@ -77,7 +88,11 @@ Open-source Cursor plugin for production Flutter development and testing.
    - `flutter-mobile-release-manager`
    - `prepare-mobile-release`
    - `docs/mobile-app-publishing-checklist.md`
-7. Keep generated output aligned with plugin rules.
+7. For Firebase integration use:
+   - `flutter-firebase-integrator`
+   - `integrate-firebase`
+   - `docs/firebase-integration-checklist.md`
+8. Keep generated output aligned with plugin rules.
 
 ## Top use cases
 
@@ -87,3 +102,4 @@ Open-source Cursor plugin for production Flutter development and testing.
 4. Debug and error resolution for Dart/Android/iOS/dependency failures.
 5. Risk-focused code review against conventions and architecture rules.
 6. Android/iOS publishing readiness with official Flutter + store submission checklists.
+7. Production-ready Firebase integration workflow for Flutter apps.

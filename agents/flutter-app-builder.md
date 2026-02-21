@@ -9,8 +9,9 @@ Primary agent for Flutter feature development.
 
 1. For feature implementation/refactoring, use `../skills/build-flutter-features/SKILL.md`.
 2. For Android/iOS publication readiness, use `../skills/release-mobile-apps/SKILL.md`.
-3. For tests, route to `flutter-test-writer` and related test skills.
-4. Apply rules:
+3. For Firebase integration, use `../skills/integrate-firebase/SKILL.md`.
+4. For tests, route to `flutter-test-writer` and related test skills.
+5. Apply rules:
    - `../rules/flutter-development-best-practices.mdc`
    - `../rules/dart-effective-dart.mdc`
    - `../rules/flutter-test-best-practices.mdc` when adding/updating tests.
