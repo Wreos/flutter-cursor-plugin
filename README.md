@@ -1,42 +1,58 @@
 # flutter-testing
 
-Open-source Cursor plugin to make Dart/Flutter test writing faster, cleaner, and more consistent.
+Open-source Cursor plugin for production Flutter development and testing.
 
-## Goals
+## What this plugin covers
 
-- **Efficient test pyramid**: keep most coverage in unit/widget tests, keep E2E small and high-value.
-- **Reliable patterns**: deterministic async, stable selectors, clear GIVEN-WHEN-THEN naming.
-- **Reusable workflows**: agents, skills, commands, and templates for bloc/cubit, widget, and Patrol E2E tests.
+- Flutter feature implementation with clean architecture defaults.
+- Figma-to-Flutter implementation workflow with Figma MCP.
+- Dart/Flutter analysis and code generation workflows with Dart MCP.
+- Full testing strategy: unit, widget, bloc/cubit, and Patrol E2E.
 
-## Components
+## Core principles
 
-- **Agents**: main test router plus focused widget/bloc/e2e agents.
-- **Rules**: repo-wide conventions for test quality and consistency.
-- **Skills**: practical step-by-step guides for each test layer.
-- **Templates**: starter templates for widget, bloc/cubit, and Patrol E2E tests.
-- **Setup guide**: optional shared test-environment patterns in `docs/test-environment-setup.md`.
+- Keep business logic outside widgets.
+- Prefer deterministic async and explicit state transitions.
+- Keep selectors stable and tests behavior-first.
+- Favor small, composable widgets and injected dependencies.
+
+## Included assets
+
+- **Release checklist**: `docs/official-release-checklist.md` for official/public release prep.
+- **Agents**
+  - `flutter-app-builder` (general Flutter implementation)
+  - `flutter-test-writer`
+  - `flutter-widget-test-writer`
+  - `flutter-e2e-test-writer`
+- **Commands**
+  - `implement-flutter-feature`
+  - `implement-figma-screen`
+  - `write-widget-test`
+  - `write-bloc-test`
+  - `write-e2e-test`
+- **Rules**
+  - `rules/flutter-development-best-practices.mdc`
+  - `rules/flutter-test-best-practices.mdc`
+- **Skills**
+  - `skills/build-flutter-features/`
+  - `skills/write-flutter-tests/`
+
+## MCP integrations
+
+- **Dart MCP**: use for analysis, fix suggestions, formatting guidance, and project-aware Dart/Flutter workflows.
+- **Figma MCP**: use when translating Figma nodes/screens to Flutter UI with higher visual fidelity.
 
 ## Requirements
 
 - Flutter SDK and Dart tooling.
-- `flutter_test` for widget tests.
-- `bloc_test` + `mocktail` for bloc/cubit tests.
-- `patrol` for E2E tests (if your repo uses Patrol).
+- Patrol (only if you run Patrol E2E tests).
+- Dart MCP server configured in Cursor.
+- Figma MCP server configured in Cursor for design implementation tasks.
 
 ## Usage
 
 1. Enable this plugin in Cursor.
-2. Use the `flutter-test-writer` agent, or run commands:
-   - `write-widget-test`
-   - `write-bloc-test`
-   - `write-e2e-test`
-3. Keep tests aligned with `.cursor-plugin/rules/flutter-test-best-practices.mdc`.
-
-## Conventions
-
-- Event tests: `WHEN user taps <control> THEN <result>`.
-- State tests: `GIVEN <state> THEN <rendered result>`.
-- Prefer behavior assertions over visual internals.
-- Use stable selectors (keys -> semantics -> text fallback).
-- Keep async deterministic (`wait:` in `blocTest`, deliberate `pump`/`pumpAndSettle`).
-- Use page objects for Patrol E2E interactions.
+2. For feature work, use `flutter-app-builder` or `implement-flutter-feature`.
+3. For design implementation, use `implement-figma-screen`.
+4. For tests, use `flutter-test-writer` or specific test commands.
+5. Keep generated output aligned with plugin rules.

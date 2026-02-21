@@ -21,7 +21,7 @@ Main router for Flutter test tasks.
 
 ## Notes
 
-- Use Dart/Flutter MCP if available; otherwise use shell.
+- Prefer Dart MCP for diagnostics and project-aware Dart/Flutter fixes.
 - For widget tests, enforce behavior-first assertions (actions, branching, side effects), not synthetic-only attribute checks.
 - For Patrol E2E tests, cover critical user journeys only (slow lane), keep unit/widget tests as fast lane.
 - Run only impacted tests before finishing.
