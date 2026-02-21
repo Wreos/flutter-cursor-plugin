@@ -22,3 +22,16 @@ Use for new feature/module boilerplate generation.
 - Inject dependencies through constructors.
 - Avoid hidden globals.
 - Keep files cohesive and naming consistent.
+
+## Guardrails
+
+- Keep scaffold minimal and compilable.
+- Avoid adding business logic before contracts/interfaces exist.
+- Do not generate unused files/classes.
+
+## Required output
+
+1. Generated folder tree.
+2. Core files created and purpose.
+3. Starter tests added.
+4. Remaining TODOs to complete feature behavior.

@@ -32,6 +32,13 @@ Use this skill for non-test Flutter development tasks.
 - Restrict changes to the requested feature/module unless explicitly expanded.
 - Do not mix unrelated refactors with feature delivery.
 
+## Required output
+
+1. Goal + scope summary.
+2. Files changed by layer (presentation/domain/data).
+3. Validation commands run and results.
+4. Residual risks or follow-up TODOs.
+
 ## Required references
 
 - `../../rules/flutter-development-best-practices.mdc`

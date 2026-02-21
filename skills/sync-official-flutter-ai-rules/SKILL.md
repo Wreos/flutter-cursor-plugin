@@ -29,6 +29,13 @@ Use this workflow to keep plugin guidance aligned with upstream Flutter AI rules
 - Keep active file `rules/flutter-official-ai-rules.mdc` aligned with chosen profile.
 - Prefer `4k` unless there is a clear reason to switch to `10k` or `1k`.
 
+## Required output
+
+1. Selected profile and rationale.
+2. Files synced/updated.
+3. Diff summary for active rule.
+4. Follow-up actions (if manual review is needed).
+
 ## Official upstream sources
 
 - `https://raw.githubusercontent.com/flutter/flutter/main/docs/rules/rules_10k.md`

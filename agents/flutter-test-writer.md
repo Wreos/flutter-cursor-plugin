@@ -25,3 +25,10 @@ Main router for Flutter test tasks.
 - For widget tests, enforce behavior-first assertions (actions, branching, side effects), not synthetic-only attribute checks.
 - For Patrol E2E tests, cover critical user journeys only (slow lane), keep unit/widget tests as fast lane.
 - Run only impacted tests before finishing.
+
+## Output expectations
+
+1. Test type selected (widget/bloc/integration) and reason.
+2. Files changed and template used.
+3. Test commands run and pass/fail result.
+4. Remaining coverage gaps.

@@ -18,3 +18,10 @@ Dedicated agent for mobile app publishing readiness.
 - Android Play-ready build and signing checks.
 - iOS App Store-ready archive and signing checks.
 - Versioning, release notes, privacy declarations, and submission gating.
+
+## Output expectations
+
+1. Android readiness status.
+2. iOS readiness status.
+3. Validation evidence (commands/artifacts/checklists).
+4. Blocking issues before submission.

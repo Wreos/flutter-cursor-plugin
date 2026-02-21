@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Added output expectations to all agents and standardized required output sections across all skills.
+- Added validation script for agent/skill prompt quality:
+  - `scripts/validate_agents_skills.sh`
+- Verified prompt test matrix for all agents/skills (26 checks, all passing).
 - Hardened command prompts with shared execution guardrails:
   - `docs/prompt-execution-guardrails.md`
 - Added deterministic validation guidance:

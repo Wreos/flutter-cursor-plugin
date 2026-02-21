@@ -40,3 +40,16 @@ Use this skill as the single entry point for Flutter test work.
   - `bloc-tests.md`
   - `integration-tests.md`
   - `../../docs/test-environment-setup.md`
+
+## Guardrails
+
+- Prefer deterministic tests over time-dependent assertions.
+- Keep test setup local unless shared helpers already exist.
+- Avoid broad snapshot/golden assertions unless explicitly requested.
+
+## Required output
+
+1. Test type selected and why.
+2. Files created/updated.
+3. Test commands run and results.
+4. Flakiness risks or missing coverage notes.

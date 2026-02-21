@@ -27,6 +27,19 @@ Use this skill for Android/iOS store publishing preparation.
 7. Submit and monitor post-release health metrics.
 8. If CI pipeline is missing, create it with `commands/setup-mobile-github-pipeline.md` and `templates/github_actions_flutter_mobile_ci.yml`.
 
+## Guardrails
+
+- Do not mark release ready without artifact build evidence.
+- Keep Android/iOS signing and versioning checks explicit.
+- Flag missing compliance metadata as blockers, not warnings.
+
+## Required output
+
+1. Android readiness status (+ artifact path if built).
+2. iOS readiness status (+ artifact/archive status).
+3. Validation commands run and outcomes.
+4. Blocking gaps before submission.
+
 ## Required references
 
 - `../../docs/mobile-app-publishing-checklist.md`
