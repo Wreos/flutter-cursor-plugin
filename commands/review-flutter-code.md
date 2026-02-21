@@ -12,3 +12,5 @@ Run structured Flutter code review.
 5. Include OWASP MASVS-focused mobile security checks.
 6. Prioritize findings by severity and regression risk.
 7. Include testing and accessibility checks.
+
+99. Return final response using `../docs/command-output-contract.md`.

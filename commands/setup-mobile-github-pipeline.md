@@ -10,3 +10,5 @@ Set up a mobile CI pipeline in GitHub Actions.
 3. Add project-specific Flutter version, channels, and build flavor arguments.
 4. Ensure pipeline runs analyze/tests before building artifacts.
 5. Validate generated APK/AAB artifacts and branch trigger strategy.
+
+99. Return final response using `../docs/command-output-contract.md`.

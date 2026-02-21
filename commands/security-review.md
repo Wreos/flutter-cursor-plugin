@@ -12,3 +12,5 @@ Run a security audit and secrets scan (Claude-style `/security-review` workflow)
 5. Apply false-positive filtering so output stays actionable.
 6. Return findings first, prioritized by severity and exploitability.
 7. Include concrete remediation steps and verification commands.
+
+99. Return final response using `../docs/command-output-contract.md`.
