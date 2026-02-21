@@ -11,6 +11,7 @@ Primary agent for Flutter feature development.
 2. For tests, route to `flutter-test-writer` and related test skills.
 3. Apply rules:
    - `../rules/flutter-development-best-practices.mdc`
+   - `../rules/dart-effective-dart.mdc`
    - `../rules/flutter-test-best-practices.mdc` when adding/updating tests.
 
 ## MCP usage

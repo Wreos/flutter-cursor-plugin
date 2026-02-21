@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.1
+
+- Added explicit Effective Dart rules: `rules/dart-effective-dart.mdc`.
+- Integrated Effective Dart enforcement into:
+  - `agents/flutter-app-builder.md`
+  - `commands/implement-flutter-feature.md`
+  - `commands/implement-figma-screen.md`
+  - `skills/build-flutter-features/SKILL.md`
+  - `rules/flutter-development-best-practices.mdc`
+- Updated README and official release checklist with Effective Dart alignment.
+
 ## 1.0.0
 
 - First stable public release.

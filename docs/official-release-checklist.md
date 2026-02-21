@@ -13,6 +13,7 @@ Use this checklist before tagging a public release.
 - Rules, skills, and commands are consistent (no conflicting guidance).
 - Templates are generic and repository-agnostic.
 - No private/company-specific references remain.
+- Effective Dart alignment is explicitly enforced (`rules/dart-effective-dart.mdc`).
 
 ## Tooling
 

@@ -27,4 +27,5 @@ Use this skill for non-test Flutter development tasks.
 ## Required references
 
 - `../../rules/flutter-development-best-practices.mdc`
+- `../../rules/dart-effective-dart.mdc`
 - `../../rules/flutter-test-best-practices.mdc`

@@ -32,6 +32,7 @@ Open-source Cursor plugin for production Flutter development and testing.
   - `write-e2e-test`
 - **Rules**
   - `rules/flutter-development-best-practices.mdc`
+  - `rules/dart-effective-dart.mdc`
   - `rules/flutter-test-best-practices.mdc`
 - **Skills**
   - `skills/build-flutter-features/`
@@ -41,6 +42,7 @@ Open-source Cursor plugin for production Flutter development and testing.
 
 - **Dart MCP**: use for analysis, fix suggestions, formatting guidance, and project-aware Dart/Flutter workflows.
 - **Figma MCP**: use when translating Figma nodes/screens to Flutter UI with higher visual fidelity.
+- **Effective Dart**: align implementation with the official guidance at https://dart.dev/effective-dart.
 
 ## Requirements
 

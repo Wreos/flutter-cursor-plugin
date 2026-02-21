@@ -13,6 +13,7 @@
 
 - Follow both rule files:
   - `rules/flutter-development-best-practices.mdc`
+  - `rules/dart-effective-dart.mdc`
   - `rules/flutter-test-best-practices.mdc`
 - Keep examples runnable and minimal.
 - Avoid repository-specific assumptions in shared plugin assets.

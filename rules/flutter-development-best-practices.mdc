@@ -44,4 +44,5 @@ globs: ["lib/**/*.dart"]
 
 - Prefer Dart MCP for project-aware diagnostics and safe code adjustments.
 - Use Figma MCP only for design-driven implementation tasks.
+- Enforce `rules/dart-effective-dart.mdc` for idiomatic Dart style/design conventions.
 - Run formatting and analysis before finalizing changes.
