@@ -20,9 +20,17 @@ Use this skill for non-test Flutter development tasks.
 ## Architecture defaults
 
 - Keep widgets focused on rendering and interaction.
-- Keep business logic in cubit/bloc/use-cases/services.
+- Choose state management based on existing project conventions first.
+- If the project already uses Riverpod/Bloc/Cubit/GetX, stay consistent with that choice.
+- If no convention exists, choose the simplest viable option and document why.
+- Keep business logic in dedicated controllers/cubit/bloc/use-cases/services (not widgets).
 - Avoid hidden global state/singletons when DI can be used.
 - Keep models immutable where practical.
+
+## Scope guardrails
+
+- Restrict changes to the requested feature/module unless explicitly expanded.
+- Do not mix unrelated refactors with feature delivery.
 
 ## Required references
 

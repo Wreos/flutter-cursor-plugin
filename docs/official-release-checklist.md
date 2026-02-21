@@ -16,8 +16,8 @@ Use this checklist before tagging a public release.
 - Templates are generic and repository-agnostic.
 - No private/company-specific references remain.
 - Effective Dart alignment is explicitly enforced (`rules/dart-effective-dart.mdc`).
-- Command output contract is documented and referenced (`docs/command-output-contract.md`).
-- Latest quality-iterations report exists (`docs/quality-iterations-2026-02-21.md`).
+- Prompt execution guardrails are documented and referenced (`docs/prompt-execution-guardrails.md`).
+- Validation matrix is documented and referenced (`docs/validation-matrix.md`).
 
 ## Tooling
 

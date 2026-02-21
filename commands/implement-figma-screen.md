@@ -11,5 +11,8 @@ Implement a Flutter UI from Figma source.
 4. Use Figma MCP for node context, layout, spacing, typography, and assets.
 5. Use Dart MCP for post-implementation analysis and fixes.
 6. Add widget tests for critical interactions and visible states.
+7. If no Figma URL/node is provided, stop and request it before implementation.
 
-99. Return final response using `../docs/command-output-contract.md`.
+Preconditions and guardrails:
+- Enforce `../docs/prompt-execution-guardrails.md` before execution.
+- Validate outcomes using `../docs/validation-matrix.md`.
