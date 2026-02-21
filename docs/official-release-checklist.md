@@ -45,3 +45,9 @@ Use this checklist before tagging a public release.
 - `/security-review` command and security skill exist and are linked from README.
 - Official security references are included and up to date.
 - Optional GitHub Action template exists for PR security reviews (`templates/github_actions_security_review.yml`).
+
+## Dependency upgrade readiness
+
+- Dependency upgrade flow is documented (`docs/dependency-upgrade-checklist.md`).
+- `update-flutter-dependencies` command and skill exist and are linked from README.
+- Upgrade workflow includes analyze/tests gates and rollback guidance.

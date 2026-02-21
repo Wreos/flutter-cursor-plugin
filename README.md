@@ -55,6 +55,7 @@ Open-source Cursor plugin for production Flutter development and testing.
   - `migrate-flutter-code`
   - `resolve-flutter-build-error`
   - `review-flutter-code`
+  - `update-flutter-dependencies`
   - `prepare-mobile-release`
   - `setup-mobile-github-pipeline`
   - `integrate-firebase`
@@ -75,6 +76,7 @@ Open-source Cursor plugin for production Flutter development and testing.
   - `skills/review-flutter-code/`
   - `skills/debug-flutter-issues/`
   - `skills/migrate-flutter-code/`
+  - `skills/update-flutter-dependencies/`
   - `skills/security-audit/`
 
 ## MCP integrations
@@ -112,6 +114,7 @@ Open-source Cursor plugin for production Flutter development and testing.
    - `migrate-flutter-code`
    - `resolve-flutter-build-error`
    - `review-flutter-code`
+   - `update-flutter-dependencies`
    - or use dedicated review agent: `flutter-code-reviewer`
 6. For Android/iOS publication readiness use:
    - `flutter-mobile-release-manager`
@@ -126,6 +129,8 @@ Open-source Cursor plugin for production Flutter development and testing.
    - `security-review`
    - `docs/security-audit-checklist.md`
 9. Keep generated output aligned with plugin rules.
+10. For dependency upgrades, also follow:
+   - `docs/dependency-upgrade-checklist.md`
 
 Note: every code review flow includes mandatory security checks (OWASP MASVS-oriented).
 
@@ -140,3 +145,4 @@ Note: every code review flow includes mandatory security checks (OWASP MASVS-ori
 7. Production-ready Firebase integration workflow for Flutter apps.
 8. GitHub Actions mobile CI pipeline setup for APK/AAB build automation.
 9. Security audit and secrets scanner workflow via `/security-review`.
+10. Safe Flutter/Dart dependency upgrades with deterministic validation and rollback.

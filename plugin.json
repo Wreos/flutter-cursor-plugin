@@ -36,6 +36,8 @@
     "analytics",
     "github actions",
     "apk",
+    "dependency upgrade",
+    "flutter upgrade",
     "security",
     "secrets scanner",
     "gitleaks",
