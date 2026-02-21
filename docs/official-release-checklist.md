@@ -7,6 +7,7 @@ Use this checklist before tagging a public release.
 - Plugin metadata is up to date (`plugin.json`: name, version, author, description, keywords).
 - README clearly explains scope, commands, agents, and MCP requirements.
 - Changelog includes the release notes for the target version.
+- Command naming and aliases are documented (`docs/command-namespacing.md`).
 
 ## Quality
 
