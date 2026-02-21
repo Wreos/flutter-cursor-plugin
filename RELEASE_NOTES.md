@@ -1,0 +1,22 @@
+- Added command namespacing with aliases in `flutter:*` form for all canonical commands.
+- Added alias generator script `scripts/generate_namespaced_command_aliases.py`.
+- Added command namespacing documentation (`docs/command-namespacing.md`).
+- Added release automation workflow:
+  - `.github/workflows/release-automation.yml`
+  - `scripts/release_automation.py`
+  - `docs/release-automation.md`
+- Release automation now performs semver bump, changelog section cut, tag creation, and GitHub Release publishing from `RELEASE_NOTES.md`.
+- Fixed Flutter AI rules profile sync metadata so only `rules/flutter-official-ai-rules.mdc` contains Cursor `globs` auto-attach front matter; synced `rules/official/*.mdc` remain non-attaching source profiles.
+- Added official Flutter AI rules sync workflow:
+  - command: `commands/sync-official-flutter-ai-rules.md`
+  - skill: `skills/sync-official-flutter-ai-rules/SKILL.md`
+  - docs: `docs/flutter-ai-rules-sync.md`
+  - sync script: `scripts/sync_official_flutter_ai_rules.sh`
+- Added synced official Flutter AI rules profiles:
+  - `rules/official/flutter-ai-rules-10k.mdc`
+  - `rules/official/flutter-ai-rules-4k.mdc`
+  - `rules/official/flutter-ai-rules-1k.mdc`
+  - active: `rules/flutter-official-ai-rules.mdc`
+- Added dedicated security posture documentation (`docs/security-posture.md`) with `/security-review` scope, false-positive handling, and CI integration guidance.
+- Added a "Value in 5 minutes" demo section to `README.md` with one-prompt flow and three copy-ready scenarios.
+- Added visual demo artifact `assets/demo-5min-flow.svg` for quick onboarding value proof.

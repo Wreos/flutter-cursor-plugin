@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.10.0
+
 - Added command namespacing with aliases in `flutter:*` form for all canonical commands.
 - Added alias generator script `scripts/generate_namespaced_command_aliases.py`.
 - Added command namespacing documentation (`docs/command-namespacing.md`).
