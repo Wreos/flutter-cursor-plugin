@@ -9,3 +9,5 @@ Run a controlled dependency upgrade.
 2. Keep changes incremental and reviewable.
 3. Run `flutter analyze` and impacted tests before finalizing.
 4. Document version deltas, breaking changes, and rollback plan.
+
+99. Return final response using `../docs/command-output-contract.md`.

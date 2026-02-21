@@ -9,3 +9,5 @@ Generate tests for the target feature or class.
 2. Enforce `../rules/flutter-test-best-practices.mdc`.
 3. Keep tests behavior-driven and deterministic.
 4. Prefer focused tests for changed code paths.
+
+99. Return final response using `../docs/command-output-contract.md`.

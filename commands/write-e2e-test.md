@@ -13,3 +13,5 @@ Create or update a Patrol E2E test.
 6. Keep one main path per test; avoid branching in test body.
 7. Keep credentials in `--dart-define` / `.patrol.env` (no hardcoded secrets).
 8. Run affected Patrol tests and fix failures.
+
+99. Return final response using `../docs/command-output-contract.md`.

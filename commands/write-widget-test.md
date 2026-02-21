@@ -11,3 +11,5 @@ Create or update a widget test file.
 4. Start from `../templates/widget_test_template.dart`.
 5. Prefer behavioral assertions (user action -> observable outcome, branch shown/hidden, verify side effects), not only style attributes.
 6. Run affected tests and fix failures.
+
+99. Return final response using `../docs/command-output-contract.md`.

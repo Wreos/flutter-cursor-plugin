@@ -10,3 +10,5 @@ Create a new feature module scaffold.
 3. Enforce `../rules/dart-effective-dart.mdc`.
 4. Build minimal complete skeleton first (UI + state + data boundaries).
 5. Add starter tests with `write-widget-test` / `write-bloc-test`.
+
+99. Return final response using `../docs/command-output-contract.md`.

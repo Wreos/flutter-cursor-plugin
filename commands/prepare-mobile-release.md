@@ -10,3 +10,5 @@ Prepare app for store publication.
 3. Produce Android release artifact (`.aab`) and validate signing/versioning.
 4. Produce iOS release artifact (`.ipa`/archive) and validate signing/versioning.
 5. Confirm store metadata/compliance inputs are complete before submission.
+
+99. Return final response using `../docs/command-output-contract.md`.

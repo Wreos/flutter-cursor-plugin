@@ -10,3 +10,5 @@ Run a migration/refactor task.
 3. Enforce `../rules/dart-effective-dart.mdc`.
 4. Use Dart MCP diagnostics to validate each step.
 5. Add or update tests for behavioral changes.
+
+99. Return final response using `../docs/command-output-contract.md`.

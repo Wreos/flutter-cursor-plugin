@@ -11,3 +11,5 @@ Implement or refactor a Flutter feature.
 4. Use Dart MCP for analysis and project-aware updates.
 5. Keep dependencies injected and testable.
 6. Add/update tests for modified behavior.
+
+99. Return final response using `../docs/command-output-contract.md`.

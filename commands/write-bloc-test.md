@@ -10,3 +10,5 @@ Create or update a Bloc/Cubit test file.
 3. Enforce `../rules/flutter-test-best-practices.mdc`.
 4. Start from `../templates/bloc_test_template.dart`.
 5. Run affected tests and fix failures.
+
+99. Return final response using `../docs/command-output-contract.md`.

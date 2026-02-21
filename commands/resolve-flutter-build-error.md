@@ -10,3 +10,5 @@ Resolve a build or runtime failure.
 3. Apply smallest safe fix.
 4. Re-run failing command and impacted tests.
 5. Document root cause and prevention notes.
+
+99. Return final response using `../docs/command-output-contract.md`.
