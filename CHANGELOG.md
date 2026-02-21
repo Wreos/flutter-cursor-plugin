@@ -18,6 +18,7 @@
   - issue templates for bug/feature/upgrade requests
   - PR template with verification and rollback sections
 - Added monorepo/workspace usage guide (`docs/monorepo-workspace-guide.md`) and linked it from README/CONTRIBUTING.
+- Added API stability CI guard (`.github/workflows/api-stability.yml`) to enforce semver + changelog updates when `commands/skills/agents/rules` change.
 
 ## 1.7.0
 
