@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Fixed Flutter AI rules profile sync metadata so only `rules/flutter-official-ai-rules.mdc` contains Cursor `globs` auto-attach front matter; synced `rules/official/*.mdc` remain non-attaching source profiles.
 - Added official Flutter AI rules sync workflow:
   - command: `commands/sync-official-flutter-ai-rules.md`
   - skill: `skills/sync-official-flutter-ai-rules/SKILL.md`

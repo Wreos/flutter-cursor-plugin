@@ -1,7 +1,6 @@
 ---
 description: Official Flutter AI rules profile (10k) synced from flutter/flutter.
 alwaysApply: false
-globs: ["lib/**/*.dart", "test/**/*.dart", "**/*.dart"]
 ---
 
 <!--
