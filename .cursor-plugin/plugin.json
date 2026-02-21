@@ -18,7 +18,8 @@
     "testing",
     "mobile",
     "security",
-    "mcp"
+    "mcp",
+    "upgrade"
   ],
   "keywords": [
     "dart",
@@ -29,6 +30,7 @@
     "cubit",
     "patrol",
     "firebase",
+    "dependency upgrade",
     "github actions",
     "security",
     "effective dart",

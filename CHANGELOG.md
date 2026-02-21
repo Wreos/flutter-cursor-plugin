@@ -9,6 +9,11 @@
   - schema validation for `.cursor-plugin/plugin.json`
   - required file/path existence checks
 - Updated `README.md` with quickstart, manifest compatibility notes, and compatibility matrix.
+- Added dependency upgrade workflow assets:
+  - command: `commands/update-flutter-dependencies.md`
+  - skill: `skills/update-flutter-dependencies/SKILL.md`
+  - checklist: `docs/dependency-upgrade-checklist.md`
+- Updated agent and release docs to route and validate dependency upgrade flow.
 
 ## 1.7.0
 
