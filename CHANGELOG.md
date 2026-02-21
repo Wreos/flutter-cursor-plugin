@@ -14,6 +14,10 @@
   - skill: `skills/update-flutter-dependencies/SKILL.md`
   - checklist: `docs/dependency-upgrade-checklist.md`
 - Updated agent and release docs to route and validate dependency upgrade flow.
+- Added contribution governance templates:
+  - issue templates for bug/feature/upgrade requests
+  - PR template with verification and rollback sections
+- Added monorepo/workspace usage guide (`docs/monorepo-workspace-guide.md`) and linked it from README/CONTRIBUTING.
 
 ## 1.7.0
 

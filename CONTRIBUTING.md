@@ -22,3 +22,9 @@
 
 - Prefer Dart MCP for Dart/Flutter analysis and project-aware coding tasks.
 - Use Figma MCP only when design source is provided and implementation fidelity is required.
+
+## Repository process
+
+- Use issue templates for bug/feature/upgrade proposals.
+- Use the PR template and include validation + rollback details.
+- For monorepo/workspace repos, align changes with `docs/monorepo-workspace-guide.md`.

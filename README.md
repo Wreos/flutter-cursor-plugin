@@ -24,6 +24,7 @@ Open-source Cursor plugin for production Flutter development and testing.
 - Flutter SDK: stable channel recommended.
 - Dart SDK: must support `dart mcp-server`.
 - Patrol: required only for Patrol E2E scenarios.
+- Monorepo/workspace usage: see `docs/monorepo-workspace-guide.md`.
 
 ## What this plugin covers
 
@@ -131,6 +132,8 @@ Open-source Cursor plugin for production Flutter development and testing.
 9. Keep generated output aligned with plugin rules.
 10. For dependency upgrades, also follow:
    - `docs/dependency-upgrade-checklist.md`
+11. For monorepo/workspace setups, follow:
+   - `docs/monorepo-workspace-guide.md`
 
 Note: every code review flow includes mandatory security checks (OWASP MASVS-oriented).
 
