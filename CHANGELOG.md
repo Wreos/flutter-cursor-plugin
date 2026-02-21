@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Added release automation workflow:
+  - `.github/workflows/release-automation.yml`
+  - `scripts/release_automation.py`
+  - `docs/release-automation.md`
+- Release automation now performs semver bump, changelog section cut, tag creation, and GitHub Release publishing from `RELEASE_NOTES.md`.
 - Fixed Flutter AI rules profile sync metadata so only `rules/flutter-official-ai-rules.mdc` contains Cursor `globs` auto-attach front matter; synced `rules/official/*.mdc` remain non-attaching source profiles.
 - Added official Flutter AI rules sync workflow:
   - command: `commands/sync-official-flutter-ai-rules.md`

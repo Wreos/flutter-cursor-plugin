@@ -26,6 +26,7 @@ Use this checklist before tagging a public release.
 - `LICENSE`, `CONTRIBUTING.md`, and `CODE_OF_CONDUCT.md` are present.
 - Repository description, topics, and social preview are configured.
 - First release tag and GitHub Release notes are prepared.
+- Release automation workflow exists and is documented (`.github/workflows/release-automation.yml`, `docs/release-automation.md`).
 
 ## Mobile publication readiness
 
