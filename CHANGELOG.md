@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+- Added canonical Cursor manifest at `.cursor-plugin/plugin.json` aligned to Cursor plugin schema.
+- Added plugin-level MCP configuration at `mcp.json` for Dart MCP (`dart mcp-server`).
+- Added repository CI validation workflow:
+  - `.github/workflows/validate-plugin.yml`
+  - schema validation for `.cursor-plugin/plugin.json`
+  - required file/path existence checks
+- Updated `README.md` with quickstart, manifest compatibility notes, and compatibility matrix.
+
 ## 1.7.0
 
 - Injected integration patterns from `anthropics/claude-code-security-review` into `/security-review` workflow.

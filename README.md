@@ -2,6 +2,29 @@
 
 Open-source Cursor plugin for production Flutter development and testing.
 
+## Quickstart (1-5 minutes)
+
+1. Install/enable the plugin in Cursor.
+2. Ensure Dart MCP is available (`dart mcp-server`) and keep `mcp.json` in this repo enabled.
+3. Run one practical flow:
+   - `implement-flutter-feature` for feature scaffolding and implementation.
+   - `generate-flutter-tests` for unit/widget/bloc/Patrol E2E tests.
+   - `review-flutter-code` for risk-focused review with mandatory security checks.
+4. Use `prepare-mobile-release` and `setup-mobile-github-pipeline` before shipping Android/iOS builds.
+
+## Manifest and compatibility
+
+- Canonical manifest: `.cursor-plugin/plugin.json` (schema-aligned for Cursor plugins).
+- Compatibility manifest kept for existing setups: `plugin.json`.
+- MCP auto-configuration: `mcp.json` (Dart MCP server).
+
+## Compatibility matrix
+
+- Cursor plugins: latest stable with plugin support.
+- Flutter SDK: stable channel recommended.
+- Dart SDK: must support `dart mcp-server`.
+- Patrol: required only for Patrol E2E scenarios.
+
 ## What this plugin covers
 
 - Flutter feature implementation with clean architecture defaults.
@@ -69,6 +92,8 @@ Open-source Cursor plugin for production Flutter development and testing.
 - Android App Bundle guide: https://developer.android.com/guide/app-bundle
 - App Store Connect submission: https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-app
 - Claude Code Security Review: https://github.com/anthropics/claude-code-security-review
+- Cursor plugin schema: https://raw.githubusercontent.com/cursor/plugins/main/schemas/plugin.schema.json
+- Flutter MCP server docs: https://docs.flutter.dev/ai/mcp-server
 
 ## Requirements
 
