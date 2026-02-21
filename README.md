@@ -21,12 +21,21 @@ Open-source Cursor plugin for production Flutter development and testing.
 - **Release checklist**: `docs/official-release-checklist.md` for official/public release prep.
 - **Agents**
   - `flutter-app-builder` (general Flutter implementation)
+  - `flutter-architecture-scaffolder`
+  - `flutter-migration-refactor`
+  - `flutter-debug-resolver`
+  - `flutter-code-reviewer`
   - `flutter-test-writer`
   - `flutter-widget-test-writer`
   - `flutter-e2e-test-writer`
 - **Commands**
   - `implement-flutter-feature`
   - `implement-figma-screen`
+  - `scaffold-flutter-feature`
+  - `generate-flutter-tests`
+  - `migrate-flutter-code`
+  - `resolve-flutter-build-error`
+  - `review-flutter-code`
   - `write-widget-test`
   - `write-bloc-test`
   - `write-e2e-test`
@@ -54,7 +63,19 @@ Open-source Cursor plugin for production Flutter development and testing.
 ## Usage
 
 1. Enable this plugin in Cursor.
-2. For feature work, use `flutter-app-builder` or `implement-flutter-feature`.
-3. For design implementation, use `implement-figma-screen`.
-4. For tests, use `flutter-test-writer` or specific test commands.
-5. Keep generated output aligned with plugin rules.
+2. For feature work, use `flutter-app-builder`, `flutter-architecture-scaffolder`, or `implement-flutter-feature`.
+3. For design implementation, use `implement-figma-screen` (Figma MCP).
+4. For testing, use `flutter-test-writer` or `generate-flutter-tests`.
+5. For migrations, debugging, and reviews use dedicated commands:
+   - `migrate-flutter-code`
+   - `resolve-flutter-build-error`
+   - `review-flutter-code`
+6. Keep generated output aligned with plugin rules.
+
+## Top use cases
+
+1. Architecture scaffolding for new feature modules (BLoC/Riverpod/Clean).
+2. Test generation for unit/widget/bloc/Patrol E2E.
+3. Migration and refactoring workflows (framework/API/state-management changes).
+4. Debug and error resolution for Dart/Android/iOS/dependency failures.
+5. Risk-focused code review against conventions and architecture rules.

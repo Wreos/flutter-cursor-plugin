@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Flutter Cursor Plugin logo">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e88e5"/>
+      <stop offset="100%" stop-color="#26c6da"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="#0f172a"/>
+  <path d="M62 149l46-46h36l-46 46h-36zm45-45l23-23h36l-23 23h-36zm0 68l46-46h36l-46 46h-36z" fill="url(#g)"/>
+  <circle cx="192" cy="190" r="20" fill="#22c55e"/>
+</svg>

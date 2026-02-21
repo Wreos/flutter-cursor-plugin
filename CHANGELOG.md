@@ -1,5 +1,37 @@
 # Changelog
 
+## 1.1.0
+
+- Added Top 5 production use-case coverage with dedicated agents, commands, and skills:
+  - Architecture scaffolding:
+    - agent: `agents/flutter-architecture-scaffolder.md`
+    - command: `commands/scaffold-flutter-feature.md`
+    - skill: `skills/scaffold-flutter-architecture/SKILL.md`
+  - Test generation:
+    - command: `commands/generate-flutter-tests.md`
+    - routed through existing test skills and agents
+  - Migration and refactoring:
+    - agent: `agents/flutter-migration-refactor.md`
+    - command: `commands/migrate-flutter-code.md`
+    - skill: `skills/migrate-flutter-code/SKILL.md`
+  - Debug and error resolution:
+    - agent: `agents/flutter-debug-resolver.md`
+    - command: `commands/resolve-flutter-build-error.md`
+    - skill: `skills/debug-flutter-issues/SKILL.md`
+  - Code review and conventions:
+    - agent: `agents/flutter-code-reviewer.md`
+    - command: `commands/review-flutter-code.md`
+    - skill: `skills/review-flutter-code/SKILL.md`
+- Updated README usage and top use-cases section.
+- Updated plugin metadata and keywords for discoverability.
+
+## 1.0.2
+
+- Added manifest hardening for marketplace readiness:
+  - explicit `repository` and `logo`
+  - explicit component paths for `rules`, `skills`, `agents`, and `commands`
+- Added committed logo asset at `assets/logo.svg`.
+
 ## 1.0.1
 
 - Added explicit Effective Dart rules: `rules/dart-effective-dart.mdc`.
