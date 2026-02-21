@@ -29,11 +29,18 @@ Use this checklist before tagging a public release.
 ## Mobile publication readiness
 
 - Android/iOS release flow is documented (`docs/mobile-app-publishing-checklist.md`).
-- Publishing skill/command/agent exist and are linked from README.
+- Mobile CI pipeline flow is documented (`docs/mobile-ci-pipeline-checklist.md`).
+- Publishing skills/commands exist and are linked from README.
 - Official references for Flutter/Android/Apple submission are included and up to date.
 
 ## Firebase readiness
 
 - Firebase integration flow is documented (`docs/firebase-integration-checklist.md`).
-- Firebase skill/command/agent exist and are linked from README.
+- Firebase skill/command exist and are linked from README.
 - Official FlutterFire/Firebase setup references are included and up to date.
+
+## Security readiness
+
+- Security review flow is documented (`docs/security-audit-checklist.md`).
+- `/security-review` command and security skill exist and are linked from README.
+- Official security references are included and up to date.

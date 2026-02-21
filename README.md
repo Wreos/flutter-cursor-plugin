@@ -21,15 +21,9 @@ Open-source Cursor plugin for production Flutter development and testing.
 - **Release checklist**: `docs/official-release-checklist.md` for official/public release prep.
 - **Agents**
   - `flutter-app-builder` (general Flutter implementation)
-  - `flutter-architecture-scaffolder`
-  - `flutter-migration-refactor`
-  - `flutter-debug-resolver`
   - `flutter-code-reviewer`
   - `flutter-mobile-release-manager`
-  - `flutter-firebase-integrator`
   - `flutter-test-writer`
-  - `flutter-widget-test-writer`
-  - `flutter-e2e-test-writer`
 - **Commands**
   - `implement-flutter-feature`
   - `implement-figma-screen`
@@ -39,7 +33,9 @@ Open-source Cursor plugin for production Flutter development and testing.
   - `resolve-flutter-build-error`
   - `review-flutter-code`
   - `prepare-mobile-release`
+  - `setup-mobile-github-pipeline`
   - `integrate-firebase`
+  - `security-review`
   - `write-widget-test`
   - `write-bloc-test`
   - `write-e2e-test`
@@ -49,9 +45,14 @@ Open-source Cursor plugin for production Flutter development and testing.
   - `rules/flutter-test-best-practices.mdc`
 - **Skills**
   - `skills/build-flutter-features/`
+  - `skills/scaffold-flutter-architecture/`
   - `skills/release-mobile-apps/`
   - `skills/integrate-firebase/`
   - `skills/write-flutter-tests/`
+  - `skills/review-flutter-code/`
+  - `skills/debug-flutter-issues/`
+  - `skills/migrate-flutter-code/`
+  - `skills/security-audit/`
 
 ## MCP integrations
 
@@ -77,22 +78,29 @@ Open-source Cursor plugin for production Flutter development and testing.
 ## Usage
 
 1. Enable this plugin in Cursor.
-2. For feature work, use `flutter-app-builder`, `flutter-architecture-scaffolder`, or `implement-flutter-feature`.
+2. For feature work, use `flutter-app-builder` or `implement-flutter-feature`.
 3. For design implementation, use `implement-figma-screen` (Figma MCP).
 4. For testing, use `flutter-test-writer` or `generate-flutter-tests`.
 5. For migrations, debugging, and reviews use dedicated commands:
    - `migrate-flutter-code`
    - `resolve-flutter-build-error`
    - `review-flutter-code`
+   - or use dedicated review agent: `flutter-code-reviewer`
 6. For Android/iOS publication readiness use:
    - `flutter-mobile-release-manager`
    - `prepare-mobile-release`
    - `docs/mobile-app-publishing-checklist.md`
+   - `setup-mobile-github-pipeline`
+   - `docs/mobile-ci-pipeline-checklist.md`
 7. For Firebase integration use:
-   - `flutter-firebase-integrator`
    - `integrate-firebase`
    - `docs/firebase-integration-checklist.md`
-8. Keep generated output aligned with plugin rules.
+8. For security audit and secrets scanning use:
+   - `security-review`
+   - `docs/security-audit-checklist.md`
+9. Keep generated output aligned with plugin rules.
+
+Note: every code review flow includes mandatory security checks (OWASP MASVS-oriented).
 
 ## Top use cases
 
@@ -103,3 +111,5 @@ Open-source Cursor plugin for production Flutter development and testing.
 5. Risk-focused code review against conventions and architecture rules.
 6. Android/iOS publishing readiness with official Flutter + store submission checklists.
 7. Production-ready Firebase integration workflow for Flutter apps.
+8. GitHub Actions mobile CI pipeline setup for APK/AAB build automation.
+9. Security audit and secrets scanner workflow via `/security-review`.

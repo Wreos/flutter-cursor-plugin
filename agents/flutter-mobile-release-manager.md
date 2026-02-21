@@ -10,7 +10,7 @@ Dedicated agent for mobile app publishing readiness.
 1. Follow `../skills/release-mobile-apps/SKILL.md`.
 2. Enforce `../rules/flutter-development-best-practices.mdc`.
 3. Enforce `../rules/dart-effective-dart.mdc`.
-4. Run through `../docs/mobile-app-publishing-checklist.md` before submission.
+4. Run `../docs/mobile-app-publishing-checklist.md` end-to-end.
 5. Validate release artifacts and store metadata readiness.
 
 ## Scope

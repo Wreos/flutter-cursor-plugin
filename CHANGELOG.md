@@ -1,5 +1,42 @@
 # Changelog
 
+## 1.6.1
+
+- Enforced security checks on every code review.
+- `flutter-code-reviewer` and `review-flutter-code` now require running `skills/security-audit/SKILL.md`.
+- Added mandatory OWASP MASVS-oriented coverage for mobile security checks.
+- Updated security checklist and README to reflect always-on review security pass.
+
+## 1.6.0
+
+- Added security audit workflow with Claude-style `/security-review` entrypoint:
+  - command: `commands/security-review.md`
+  - skill: `skills/security-audit/SKILL.md`
+  - checklist: `docs/security-audit-checklist.md`
+- Added secrets scanning guidance and prioritized findings format.
+- Updated README, official release checklist, and plugin metadata for security workflow support.
+
+## 1.5.0
+
+- Consolidated plugin architecture to reduce agent duplication.
+- Kept a small agent set:
+  - `agents/flutter-app-builder.md`
+  - `agents/flutter-test-writer.md`
+- Reintroduced specialized agents where dedicated mode is useful:
+  - `agents/flutter-code-reviewer.md`
+  - `agents/flutter-mobile-release-manager.md`
+- Moved feature-specific workflows to skills + commands as the primary interface.
+- Updated README and official release checklist to reflect the streamlined model.
+
+## 1.4.0
+
+- Added command-only workflow for mobile GitHub CI pipeline setup (no new agent):
+  - command: `commands/setup-mobile-github-pipeline.md`
+  - template: `templates/github_actions_flutter_mobile_ci.yml`
+  - checklist: `docs/mobile-ci-pipeline-checklist.md`
+- Linked pipeline setup into release-mobile skill and README usage.
+- Added official GitHub Actions documentation references for workflow syntax and artifacts.
+
 ## 1.3.0
 
 - Added Firebase integration workflow:

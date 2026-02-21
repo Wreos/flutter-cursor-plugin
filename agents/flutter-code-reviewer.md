@@ -11,7 +11,9 @@ Dedicated agent for code review and conventions.
 2. Enforce `../rules/flutter-development-best-practices.mdc`.
 3. Enforce `../rules/dart-effective-dart.mdc`.
 4. Enforce `../rules/flutter-test-best-practices.mdc` for test diffs.
-5. Prioritize findings by risk and user impact.
+5. Run security checks via `../skills/security-audit/SKILL.md` on every review.
+6. Include OWASP MASVS-focused checks in every review.
+7. Prioritize findings by risk and user impact.
 
 ## Review focus
 

@@ -25,9 +25,11 @@ Use this skill for Android/iOS store publishing preparation.
 5. Confirm policy/compliance declarations (privacy, permissions, data safety as applicable).
 6. Create release notes and rollout strategy.
 7. Submit and monitor post-release health metrics.
+8. If CI pipeline is missing, create it with `commands/setup-mobile-github-pipeline.md` and `templates/github_actions_flutter_mobile_ci.yml`.
 
 ## Required references
 
 - `../../docs/mobile-app-publishing-checklist.md`
+- `../../docs/mobile-ci-pipeline-checklist.md`
 - `../../rules/flutter-development-best-practices.mdc`
 - `../../rules/dart-effective-dart.mdc`
