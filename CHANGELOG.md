@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added pre-release enable guide (`docs/pre-release-enable-plugin.md`) with repository install and manual workspace settings options.
+
 ## 1.10.0
 
 - Added command namespacing with aliases in `flutter:*` form for all canonical commands.
