@@ -1,0 +1,26 @@
+name: API Stability Guard
+
+on:
+  pull_request:
+
+jobs:
+  api-stability:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Ensure jq
+        run: |
+          if ! command -v jq >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y jq
+          fi
+
+      - name: Run API stability guard
+        run: .github/scripts/api_stability_guard.sh
