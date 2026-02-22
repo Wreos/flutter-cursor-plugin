@@ -39,6 +39,7 @@ Use this skill for SDK and package upgrades that must stay stable and reviewable
 - If failures cascade, split into two PRs:
   - Flutter SDK upgrade
   - package upgrade and fixes
+- Always include before/after version snapshot and explicit rollback trigger.
 
 ## Required output
 
@@ -47,3 +48,4 @@ Use this skill for SDK and package upgrades that must stay stable and reviewable
 3. Validation commands run and their result.
 4. Files changed for compatibility fixes.
 5. Rollback instructions.
+6. Known remaining risks after upgrade.

@@ -31,6 +31,8 @@ Use this workflow to keep plugin guidance aligned with upstream Flutter AI rules
 - Do not enforce plugin policy by patching official content after sync.
 - Use `rules/flutter-plugin-policy-priority.mdc` for higher-priority policy and conflict resolution.
 - Prefer `4k` unless there is a clear reason to switch to `10k` or `1k`.
+- Do not claim sync completed unless command output is available.
+- In simulation/planning mode, status must be `PENDING` and include `not executed` note.
 
 ## Required output
 

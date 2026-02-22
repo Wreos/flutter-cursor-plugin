@@ -28,6 +28,8 @@ Use this skill for end-to-end Firebase integration in Flutter apps.
 - Keep service wrappers injectable and testable.
 - Add error handling and fallback behavior for remote dependencies.
 - Validate behavior in both debug and release-capable builds.
+- Do not claim Android/iOS integration is complete without naming changed config files.
+- In simulation/planning mode, never use `integrated/completed`; use `planned/not executed`.
 
 ## Required output
 

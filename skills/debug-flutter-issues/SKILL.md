@@ -24,6 +24,7 @@ Use for compiler/build/runtime failures.
 - Do not propose a fix without a reproducible command or clear log evidence.
 - Keep fixes minimal and limited to the failing layer unless a cross-layer root cause is proven.
 - Call out unknowns explicitly instead of guessing when logs are incomplete.
+- Include one preventive follow-up even when the fix is minimal.
 
 ## Output format
 

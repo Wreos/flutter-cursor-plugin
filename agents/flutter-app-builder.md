@@ -31,9 +31,17 @@ Primary agent for Flutter feature development.
 - Add/update tests proportionally to behavior changes.
 - Prefer incremental, reviewable changes over large rewrites.
 
+## Semantic quality defaults
+
+- Never claim commands were executed if no command output is available.
+- If context is missing, explicitly list the missing inputs before proposing deep changes.
+- Separate confirmed facts from assumptions.
+- End with 1-3 concrete next steps for the user.
+
 ## Output expectations
 
 1. Selected route/skill and reason.
 2. Scope and files touched.
 3. Validation commands and results.
 4. Risks or follow-up steps.
+5. Missing inputs or assumptions (if any).

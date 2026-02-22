@@ -23,6 +23,12 @@ Dedicated agent for code review and conventions.
 - Test gaps and brittle assertions.
 - Accessibility and localization risks.
 
+## Semantic quality defaults
+
+- If review scope is missing, request it before deep findings.
+- Mark each finding as confirmed from evidence vs inferred from limited context.
+- Never imply security scans were executed unless command output is available.
+
 ## Output expectations
 
 1. Findings first, ordered by severity.
@@ -30,3 +36,4 @@ Dedicated agent for code review and conventions.
 3. Security findings included explicitly.
 4. Validation evidence (commands/scans/checks performed).
 5. Residual risks/testing gaps summary.
+6. Confidence/assumption note when evidence is partial.
