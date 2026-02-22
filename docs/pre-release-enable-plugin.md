@@ -31,4 +31,4 @@ Notes:
 ```
 
 4. Reload Cursor window.
-5. Verify plugin commands are available (for example `implement-flutter-feature` or `flutter:implement-flutter-feature`).
+5. Verify plugin commands are available (for example `implement-flutter-feature`).
