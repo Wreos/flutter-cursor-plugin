@@ -1,22 +1,39 @@
-- Added command namespacing with aliases in `flutter:*` form for all canonical commands.
-- Added alias generator script `scripts/generate_namespaced_command_aliases.py`.
-- Added command namespacing documentation (`docs/command-namespacing.md`).
-- Added release automation workflow:
-  - `.github/workflows/release-automation.yml`
-  - `scripts/release_automation.py`
-  - `docs/release-automation.md`
-- Release automation now performs semver bump, changelog section cut, tag creation, and GitHub Release publishing from `RELEASE_NOTES.md`.
-- Fixed Flutter AI rules profile sync metadata so only `rules/flutter-official-ai-rules.mdc` contains Cursor `globs` auto-attach front matter; synced `rules/official/*.mdc` remain non-attaching source profiles.
-- Added official Flutter AI rules sync workflow:
-  - command: `commands/sync-official-flutter-ai-rules.md`
-  - skill: `skills/sync-official-flutter-ai-rules/SKILL.md`
-  - docs: `docs/flutter-ai-rules-sync.md`
-  - sync script: `scripts/sync_official_flutter_ai_rules.sh`
-- Added synced official Flutter AI rules profiles:
-  - `rules/official/flutter-ai-rules-10k.mdc`
-  - `rules/official/flutter-ai-rules-4k.mdc`
-  - `rules/official/flutter-ai-rules-1k.mdc`
-  - active: `rules/flutter-official-ai-rules.mdc`
-- Added dedicated security posture documentation (`docs/security-posture.md`) with `/security-review` scope, false-positive handling, and CI integration guidance.
-- Added a "Value in 5 minutes" demo section to `README.md` with one-prompt flow and three copy-ready scenarios.
-- Added visual demo artifact `assets/demo-5min-flow.svg` for quick onboarding value proof.
+- Added output expectations to all agents and standardized required output sections across all skills.
+- Added validation script for agent/skill prompt quality:
+  - `scripts/validate_agents_skills.sh`
+- Verified prompt test matrix for all agents/skills (26 checks, all passing).
+- Hardened command prompts with shared execution guardrails:
+  - `docs/prompt-execution-guardrails.md`
+- Added deterministic validation guidance:
+  - `docs/validation-matrix.md`
+- Updated canonical commands and core skills for:
+  - explicit fail-fast behavior when required context is missing
+  - tighter scope control and deterministic validation requirements
+- Updated active official Flutter AI rule to choose state management by project conventions (Riverpod/Bloc/Cubit/GetX/ValueNotifier based on context).
+- Added reference example repository for project structure and tests:
+  - https://github.com/Wreos/flutter-cursor-plugin-example
+- Added pre-release enable guide (`docs/pre-release-enable-plugin.md`) with repository install and manual workspace settings options.
+- Added semantic prompt quality gates:
+  - `scripts/validate_prompt_semantics.sh`
+  - `.github/workflows/semantic-quality.yml`
+  - `docs/semantic-quality-gates.md`
+- Updated scaffold architecture guidance to prefer existing project state-management convention before selecting a pattern.
+- Reworked official Flutter AI rules integration to use policy routing instead of post-sync text patching:
+  - added high-priority policy layer `rules/flutter-plugin-policy-priority.mdc`
+  - kept synced upstream profiles as base source of truth
+- Added deterministic environment setup workflow:
+  - command: `commands/setup-flutter-environment.md`
+  - skill: `skills/setup-flutter-environment/SKILL.md`
+- Simplified command prompts by removing repeated guardrails boilerplate from canonical command files.
+- Strengthened semantic output quality across agents/skills:
+  - explicit truthfulness policy (`planned/not executed` wording when no command evidence exists)
+  - required missing-inputs/assumptions notes for partial context
+  - required next steps and confidence/residual risk coverage in output contracts
+- Added external backend API integration workflow:
+  - command: `commands/integrate-mobile-api.md`
+  - skill: `skills/integrate-mobile-api/SKILL.md`
+- Removed `flutter:*` command aliases and kept canonical commands only.
+- Breaking: removed `flutter:*` command aliases; use canonical command names only.
+- Removed alias maintenance artifacts:
+  - deleted `docs/command-namespacing.md`
+  - deleted `scripts/generate_namespaced_command_aliases.py`
