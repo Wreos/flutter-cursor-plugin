@@ -26,9 +26,9 @@ Do not edit manually; run scripts/sync_official_flutter_ai_rules.sh.
 * **SOLID:** strictly enforced.
 * **State Management:**
   * **Pattern:** Separate UI state (ephemeral) from App state.
-  * **Project First:** Follow the existing project architecture and state-management choice.
-  * **Selection:** Use Riverpod/Bloc/Cubit/GetX/ValueNotifier based on project conventions, complexity, and team standards.
-  * **DI:** Keep dependencies explicit via constructor injection or project-standard DI.
+  * **Native First:** Use `ValueNotifier`, `ChangeNotifier`.
+  * **Prohibited:** NO Riverpod, Bloc, GetX unless explicitly requested.
+  * **DI:** Manual constructor injection or `provider` package if requested.
 
 ## Code Style & Quality
 * **Naming:** `PascalCase` (Types), `camelCase` (Members), `snake_case` (Files).

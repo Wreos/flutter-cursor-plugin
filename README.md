@@ -97,6 +97,7 @@ Reference project layout:
   - `update-flutter-dependencies`
   - `prepare-mobile-release`
   - `setup-mobile-github-pipeline`
+  - `setup-flutter-environment`
   - `integrate-firebase`
   - `security-review`
   - `sync-official-flutter-ai-rules`
@@ -107,6 +108,7 @@ Reference project layout:
   - `rules/flutter-development-best-practices.mdc`
   - `rules/dart-effective-dart.mdc`
   - `rules/flutter-test-best-practices.mdc`
+  - `rules/flutter-plugin-policy-priority.mdc`
 - **Skills**
   - `skills/build-flutter-features/`
   - `skills/scaffold-flutter-architecture/`
@@ -119,6 +121,7 @@ Reference project layout:
   - `skills/update-flutter-dependencies/`
   - `skills/security-audit/`
   - `skills/sync-official-flutter-ai-rules/`
+  - `skills/setup-flutter-environment/`
 
 ## MCP integrations
 
@@ -127,6 +130,7 @@ Reference project layout:
 - **Effective Dart**: align implementation with the official guidance at https://dart.dev/effective-dart.
 - **Claude `/security-review` parity**: security workflow mirrors `anthropics/claude-code-security-review` patterns (diff-aware + false-positive filtering).
 - **Official Flutter AI rules sync**: use `sync-official-flutter-ai-rules` to refresh upstream Flutter rules profiles.
+- **Rule priority routing**: `rules/flutter-plugin-policy-priority.mdc` is the high-priority policy layer over synced official rules.
 
 ## Official documentation
 
@@ -185,6 +189,8 @@ Reference project layout:
    - `docs/release-automation.md`
 14. For command namespacing/aliases (`flutter:*`), see:
    - `docs/command-namespacing.md`
+15. For deterministic local setup and SDK/MCP readiness, use:
+   - `setup-flutter-environment`
 
 Note: every code review flow includes mandatory security checks (OWASP MASVS-oriented).
 
@@ -200,3 +206,4 @@ Note: every code review flow includes mandatory security checks (OWASP MASVS-ori
 8. GitHub Actions mobile CI pipeline setup for APK/AAB build automation.
 9. Security audit and secrets scanner workflow via `/security-review`.
 10. Safe Flutter/Dart dependency upgrades with deterministic validation and rollback.
+11. Deterministic environment bootstrapping for Flutter SDK, MCP, and baseline checks.

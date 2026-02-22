@@ -33,6 +33,7 @@ canonical_commands=(
   "commands/migrate-flutter-code.md"
   "commands/scaffold-flutter-feature.md"
   "commands/setup-mobile-github-pipeline.md"
+  "commands/setup-flutter-environment.md"
   "commands/sync-official-flutter-ai-rules.md"
   "commands/write-widget-test.md"
   "commands/write-bloc-test.md"
@@ -59,8 +60,10 @@ for agent in agents/*.md; do
   check "A-${base} expects validation evidence" "rg -qi '(validation|commands and results|evidence)' '${agent}'"
 done
 
-check "Active Flutter rules are project-first for state management" "rg -q '\\* \\*\\*Project First:\\*\\* Follow the existing project architecture and state-management choice\\.' rules/flutter-official-ai-rules.mdc"
-check "Active Flutter rules do not prohibit Riverpod/Bloc/GetX outright" "! rg -q 'Prohibited:\\*\\* NO Riverpod, Bloc, GetX unless explicitly requested\\.' rules/flutter-official-ai-rules.mdc"
+check "Priority policy rule exists and is alwaysApply" "rg -q '^alwaysApply: true$' rules/flutter-plugin-policy-priority.mdc"
+check "Priority policy enforces project-first state management" "rg -q 'Project First: follow the existing project architecture and state-management choice\\.' rules/flutter-plugin-policy-priority.mdc"
+check "Priority policy allows Bloc/Riverpod style choices by project context" "rg -q 'Riverpod, Bloc, Cubit, GetX, and ValueNotifier are all allowed when justified by project context\\.' rules/flutter-plugin-policy-priority.mdc"
+check "Sync script does not patch official state-management text" "! rg -q 'Prohibited:\\*\\* NO Riverpod, Bloc, GetX unless explicitly requested\\.' scripts/sync_official_flutter_ai_rules.sh"
 check "Scaffold architecture skill enforces project-first state-management selection" "rg -q 'existing project state-management convention' skills/scaffold-flutter-architecture/SKILL.md"
 
 total=$((pass_count + fail_count))
