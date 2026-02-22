@@ -33,6 +33,9 @@
   - explicit truthfulness policy (`planned/not executed` wording when no command evidence exists)
   - required missing-inputs/assumptions notes for partial context
   - required next steps and confidence/residual risk coverage in output contracts
+- Added external backend API integration workflow:
+  - command: `commands/integrate-mobile-api.md`
+  - skill: `skills/integrate-mobile-api/SKILL.md`
 
 ## 1.10.0
 

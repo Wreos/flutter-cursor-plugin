@@ -98,6 +98,7 @@ Reference project layout:
   - `prepare-mobile-release`
   - `setup-mobile-github-pipeline`
   - `setup-flutter-environment`
+  - `integrate-mobile-api`
   - `integrate-firebase`
   - `security-review`
   - `sync-official-flutter-ai-rules`
@@ -113,6 +114,7 @@ Reference project layout:
   - `skills/build-flutter-features/`
   - `skills/scaffold-flutter-architecture/`
   - `skills/release-mobile-apps/`
+  - `skills/integrate-mobile-api/`
   - `skills/integrate-firebase/`
   - `skills/write-flutter-tests/`
   - `skills/review-flutter-code/`
@@ -172,24 +174,26 @@ Reference project layout:
 7. For Firebase integration use:
    - `integrate-firebase`
    - `docs/firebase-integration-checklist.md`
-8. For security audit and secrets scanning use:
+8. For external backend API integration use:
+   - `integrate-mobile-api`
+9. For security audit and secrets scanning use:
    - `security-review`
    - `docs/security-audit-checklist.md`
    - `docs/security-posture.md`
-9. Keep generated output aligned with plugin rules.
-10. For dependency upgrades, also follow:
+10. Keep generated output aligned with plugin rules.
+11. For dependency upgrades, also follow:
    - `docs/dependency-upgrade-checklist.md`
-11. For monorepo/workspace setups, follow:
+12. For monorepo/workspace setups, follow:
    - `docs/monorepo-workspace-guide.md`
-12. To sync official Flutter AI rules profiles (`10k`/`4k`/`1k`), use:
+13. To sync official Flutter AI rules profiles (`10k`/`4k`/`1k`), use:
    - `sync-official-flutter-ai-rules`
    - `docs/flutter-ai-rules-sync.md`
-13. For automated release cut (version/changelog/tag/release), use:
+14. For automated release cut (version/changelog/tag/release), use:
    - `.github/workflows/release-automation.yml`
    - `docs/release-automation.md`
-14. For command namespacing/aliases (`flutter:*`), see:
+15. For command namespacing/aliases (`flutter:*`), see:
    - `docs/command-namespacing.md`
-15. For deterministic local setup and SDK/MCP readiness, use:
+16. For deterministic local setup and SDK/MCP readiness, use:
    - `setup-flutter-environment`
 
 Note: every code review flow includes mandatory security checks (OWASP MASVS-oriented).
@@ -207,3 +211,4 @@ Note: every code review flow includes mandatory security checks (OWASP MASVS-ori
 9. Security audit and secrets scanner workflow via `/security-review`.
 10. Safe Flutter/Dart dependency upgrades with deterministic validation and rollback.
 11. Deterministic environment bootstrapping for Flutter SDK, MCP, and baseline checks.
+12. External backend API integration with robust auth/error/retry patterns.
