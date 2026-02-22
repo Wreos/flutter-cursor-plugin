@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 2.0.0
+
 - Added output expectations to all agents and standardized required output sections across all skills.
 - Added validation script for agent/skill prompt quality:
   - `scripts/validate_agents_skills.sh`
