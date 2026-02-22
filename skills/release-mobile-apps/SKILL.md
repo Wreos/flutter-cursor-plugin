@@ -32,6 +32,7 @@ Use this skill for Android/iOS store publishing preparation.
 - Do not mark release ready without artifact build evidence.
 - Keep Android/iOS signing and versioning checks explicit.
 - Flag missing compliance metadata as blockers, not warnings.
+- When evidence is missing, return `BLOCKED` instead of speculative readiness.
 
 ## Required output
 
@@ -39,6 +40,7 @@ Use this skill for Android/iOS store publishing preparation.
 2. iOS readiness status (+ artifact/archive status).
 3. Validation commands run and outcomes.
 4. Blocking gaps before submission.
+5. Immediate next actions to unblock release.
 
 ## Required references
 

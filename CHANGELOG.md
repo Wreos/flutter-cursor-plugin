@@ -29,6 +29,10 @@
   - command: `commands/setup-flutter-environment.md`
   - skill: `skills/setup-flutter-environment/SKILL.md`
 - Simplified command prompts by removing repeated guardrails boilerplate from canonical command files.
+- Strengthened semantic output quality across agents/skills:
+  - explicit truthfulness policy (`planned/not executed` wording when no command evidence exists)
+  - required missing-inputs/assumptions notes for partial context
+  - required next steps and confidence/residual risk coverage in output contracts
 
 ## 1.10.0
 

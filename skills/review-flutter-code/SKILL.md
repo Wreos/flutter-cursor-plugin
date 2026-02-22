@@ -32,12 +32,15 @@ Use for PR/diff/code review requests.
 - Do not provide a deep review without explicit target scope (PR diff, range, or file list).
 - Tie each finding to concrete code evidence and expected behavioral impact.
 - Keep findings prioritized by severity and user risk, not by style preference.
+- Distinguish confirmed findings from inferred risks when evidence is partial.
+- Do not claim scans/commands were run without output evidence.
 
 ## Output format
 
 - Findings first, ordered by severity.
 - File references for each finding.
 - Brief residual risk/testing gap summary.
+- Confidence/assumption note when applicable.
 
 ## Required references
 

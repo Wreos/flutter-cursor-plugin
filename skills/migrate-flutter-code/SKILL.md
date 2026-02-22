@@ -21,6 +21,7 @@ Use for framework/API/state-management migrations.
 - Do not mix unrelated refactors with migration work.
 - Keep intermediate states buildable when possible.
 - Prefer codemod-like repetitive edits over ad hoc changes.
+- Attach validation status to each migration batch.
 
 ## Required output
 
@@ -28,3 +29,4 @@ Use for framework/API/state-management migrations.
 2. Batch-by-batch changes summary.
 3. Validation commands/results per batch.
 4. Breaking changes and rollback notes.
+5. Next batch recommendation.

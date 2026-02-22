@@ -31,6 +31,7 @@ Use this skill when a project needs a clean, reproducible Flutter setup before i
 - Do not claim setup is complete while `flutter doctor` still has unresolved blockers for requested target platforms.
 - Keep setup changes minimal and reversible; avoid unrelated dependency upgrades.
 - If a required platform is out of scope (for example iOS on a non-iOS task), report it explicitly instead of forcing changes.
+- Do not say `done/completed` without command evidence.
 
 ## Required output
 

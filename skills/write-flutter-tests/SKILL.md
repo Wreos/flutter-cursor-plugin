@@ -46,6 +46,7 @@ Use this skill as the single entry point for Flutter test work.
 - Prefer deterministic tests over time-dependent assertions.
 - Keep test setup local unless shared helpers already exist.
 - Avoid broad snapshot/golden assertions unless explicitly requested.
+- Do not present sample test snippets as completed repository changes without file-level confirmation.
 
 ## Required output
 
@@ -53,3 +54,4 @@ Use this skill as the single entry point for Flutter test work.
 2. Files created/updated.
 3. Test commands run and results.
 4. Flakiness risks or missing coverage notes.
+5. Next test to add (single highest-value gap).

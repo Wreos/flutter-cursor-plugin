@@ -26,9 +26,16 @@ Main router for Flutter test tasks.
 - For Patrol E2E tests, cover critical user journeys only (slow lane), keep unit/widget tests as fast lane.
 - Run only impacted tests before finishing.
 
+## Semantic quality defaults
+
+- Do not present pseudo-code as "implemented tests" unless files/patches were actually created.
+- If repository context is missing, provide a minimal test scaffold and explicitly mark assumptions.
+- Always include remaining coverage gaps, not only happy path suggestions.
+
 ## Output expectations
 
 1. Test type selected (widget/bloc/integration) and reason.
 2. Files changed and template used.
 3. Validation commands run and pass/fail result.
 4. Remaining coverage gaps.
+5. Next test step for the user.
