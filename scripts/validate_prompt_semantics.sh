@@ -29,6 +29,7 @@ canonical_commands=(
   "commands/update-flutter-dependencies.md"
   "commands/resolve-flutter-build-error.md"
   "commands/prepare-mobile-release.md"
+  "commands/integrate-mobile-api.md"
   "commands/integrate-firebase.md"
   "commands/migrate-flutter-code.md"
   "commands/scaffold-flutter-feature.md"
