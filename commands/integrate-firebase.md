@@ -11,6 +11,3 @@ Integrate Firebase into the target Flutter app.
 4. Complete `../docs/firebase-integration-checklist.md`.
 5. Verify Android and iOS initialization in release-capable configuration.
 
-Preconditions and guardrails:
-- Enforce `../docs/prompt-execution-guardrails.md` before execution.
-- Validate outcomes using `../docs/validation-matrix.md`.

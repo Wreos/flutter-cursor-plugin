@@ -14,6 +14,3 @@ Sync official Flutter AI rules into the plugin repository.
 4. Commit synced files under `rules/official/` and active file `rules/flutter-official-ai-rules.mdc`.
 5. Keep plugin policy in `rules/flutter-plugin-policy-priority.mdc` (do not patch synced official content).
 
-Preconditions and guardrails:
-- Enforce `../docs/prompt-execution-guardrails.md` before execution.
-- Validate outcomes using `../docs/validation-matrix.md`.

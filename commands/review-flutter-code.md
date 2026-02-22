@@ -14,6 +14,3 @@ Run structured Flutter code review.
 7. Include testing and accessibility checks.
 8. If no review target is provided (PR/diff/files), stop and request explicit scope.
 
-Preconditions and guardrails:
-- Enforce `../docs/prompt-execution-guardrails.md` before execution.
-- Validate outcomes using `../docs/validation-matrix.md`.

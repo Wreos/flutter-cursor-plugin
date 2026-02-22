@@ -11,6 +11,3 @@ Create a new feature module scaffold.
 4. Build minimal complete skeleton first (UI + state + data boundaries).
 5. Add starter tests with `write-widget-test` / `write-bloc-test`.
 
-Preconditions and guardrails:
-- Enforce `../docs/prompt-execution-guardrails.md` before execution.
-- Validate outcomes using `../docs/validation-matrix.md`.

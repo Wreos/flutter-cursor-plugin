@@ -11,6 +11,3 @@ Create or update a Bloc/Cubit test file.
 4. Start from `../templates/bloc_test_template.dart`.
 5. Run affected tests and fix failures.
 
-Preconditions and guardrails:
-- Enforce `../docs/prompt-execution-guardrails.md` before execution.
-- Validate outcomes using `../docs/validation-matrix.md`.

@@ -15,6 +15,3 @@ Run a security audit and secrets scan (Claude-style `/security-review` workflow)
 8. If target scope (diff/branch/files) is missing, stop and ask for explicit scope.
 9. If scanners are unavailable, report that explicitly and continue with manual checks.
 
-Preconditions and guardrails:
-- Enforce `../docs/prompt-execution-guardrails.md` before execution.
-- Validate outcomes using `../docs/validation-matrix.md`.

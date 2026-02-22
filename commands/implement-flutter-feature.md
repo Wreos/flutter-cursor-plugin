@@ -12,6 +12,3 @@ Implement or refactor a Flutter feature.
 5. Keep dependencies injected and testable.
 6. Add/update tests for modified behavior.
 
-Preconditions and guardrails:
-- Enforce `../docs/prompt-execution-guardrails.md` before execution.
-- Validate outcomes using `../docs/validation-matrix.md`.

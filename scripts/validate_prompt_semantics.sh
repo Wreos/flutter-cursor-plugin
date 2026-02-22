@@ -42,9 +42,8 @@ canonical_commands=(
 
 for cmd_file in "${canonical_commands[@]}"; do
   base="$(basename "${cmd_file}")"
-  check "C-${base} has guardrails section" "rg -q '^Preconditions and guardrails:' '${cmd_file}'"
-  check "C-${base} references prompt guardrails doc" "rg -q 'prompt-execution-guardrails\\.md' '${cmd_file}'"
-  check "C-${base} references validation matrix" "rg -q 'validation-matrix\\.md' '${cmd_file}'"
+  check "C-${base} has command name frontmatter" "rg -q '^name:\\s*' '${cmd_file}'"
+  check "C-${base} has command description frontmatter" "rg -q '^description:\\s*' '${cmd_file}'"
 done
 
 for skill in skills/*/SKILL.md; do
