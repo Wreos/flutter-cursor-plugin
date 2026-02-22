@@ -48,7 +48,7 @@ Reference project layout:
 - Canonical manifest: `.cursor-plugin/plugin.json` (schema-aligned for Cursor plugins).
 - Compatibility manifest kept for existing setups: `plugin.json`.
 - MCP auto-configuration: `mcp.json` (Dart MCP server).
-- Command namespace support: canonical commands plus `flutter:*` aliases.
+- Command naming: canonical commands only (no aliases).
 
 ## Compatibility matrix
 
@@ -191,9 +191,7 @@ Reference project layout:
 14. For automated release cut (version/changelog/tag/release), use:
    - `.github/workflows/release-automation.yml`
    - `docs/release-automation.md`
-15. For command namespacing/aliases (`flutter:*`), see:
-   - `docs/command-namespacing.md`
-16. For deterministic local setup and SDK/MCP readiness, use:
+15. For deterministic local setup and SDK/MCP readiness, use:
    - `setup-flutter-environment`
 
 Note: every code review flow includes mandatory security checks (OWASP MASVS-oriented).

@@ -36,6 +36,11 @@
 - Added external backend API integration workflow:
   - command: `commands/integrate-mobile-api.md`
   - skill: `skills/integrate-mobile-api/SKILL.md`
+- Removed `flutter:*` command aliases and kept canonical commands only.
+- Breaking: removed `flutter:*` command aliases; use canonical command names only.
+- Removed alias maintenance artifacts:
+  - deleted `docs/command-namespacing.md`
+  - deleted `scripts/generate_namespaced_command_aliases.py`
 
 ## 1.10.0
 
