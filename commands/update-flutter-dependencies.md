@@ -11,6 +11,3 @@ Run a controlled dependency upgrade.
 4. Document version deltas, breaking changes, and rollback plan.
 5. Always include this baseline in validation: `flutter --version` (before/after), `flutter pub outdated`, `flutter analyze`, and impacted `flutter test`.
 
-Preconditions and guardrails:
-- Enforce `../docs/prompt-execution-guardrails.md` before execution.
-- Validate outcomes using `../docs/validation-matrix.md`.

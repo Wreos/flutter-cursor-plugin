@@ -11,6 +11,3 @@ Prepare app for store publication.
 4. Produce iOS release artifact (`.ipa`/archive) and validate signing/versioning.
 5. Confirm store metadata/compliance inputs are complete before submission.
 
-Preconditions and guardrails:
-- Enforce `../docs/prompt-execution-guardrails.md` before execution.
-- Validate outcomes using `../docs/validation-matrix.md`.

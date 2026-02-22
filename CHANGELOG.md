@@ -22,6 +22,13 @@
   - `.github/workflows/semantic-quality.yml`
   - `docs/semantic-quality-gates.md`
 - Updated scaffold architecture guidance to prefer existing project state-management convention before selecting a pattern.
+- Reworked official Flutter AI rules integration to use policy routing instead of post-sync text patching:
+  - added high-priority policy layer `rules/flutter-plugin-policy-priority.mdc`
+  - kept synced upstream profiles as base source of truth
+- Added deterministic environment setup workflow:
+  - command: `commands/setup-flutter-environment.md`
+  - skill: `skills/setup-flutter-environment/SKILL.md`
+- Simplified command prompts by removing repeated guardrails boilerplate from canonical command files.
 
 ## 1.10.0
 

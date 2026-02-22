@@ -10,6 +10,3 @@ Generate tests for the target feature or class.
 3. Keep tests behavior-driven and deterministic.
 4. Prefer focused tests for changed code paths.
 
-Preconditions and guardrails:
-- Enforce `../docs/prompt-execution-guardrails.md` before execution.
-- Validate outcomes using `../docs/validation-matrix.md`.

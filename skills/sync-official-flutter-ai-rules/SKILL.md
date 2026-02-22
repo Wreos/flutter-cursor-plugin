@@ -20,20 +20,23 @@ Use this workflow to keep plugin guidance aligned with upstream Flutter AI rules
    - `rules/official/flutter-ai-rules-4k.mdc`
    - `rules/official/flutter-ai-rules-1k.mdc`
    - `rules/flutter-official-ai-rules.mdc` (active profile copy)
-4. Review diffs and ensure no local manual edits were mixed in.
-5. Update changelog if behavior/guidance changed materially.
+4. Keep plugin-specific policy in `rules/flutter-plugin-policy-priority.mdc`.
+5. Review diffs and ensure no local manual edits were mixed into official synced files.
+6. Update changelog if behavior/guidance changed materially.
 
 ## Guardrails
 
 - Do not hand-edit generated files under `rules/official/`.
 - Keep active file `rules/flutter-official-ai-rules.mdc` aligned with chosen profile.
+- Do not enforce plugin policy by patching official content after sync.
+- Use `rules/flutter-plugin-policy-priority.mdc` for higher-priority policy and conflict resolution.
 - Prefer `4k` unless there is a clear reason to switch to `10k` or `1k`.
 
 ## Required output
 
 1. Selected profile and rationale.
 2. Files synced/updated.
-3. Diff summary for active rule.
+3. Diff summary for active rule + policy routing layer.
 4. Follow-up actions (if manual review is needed).
 
 ## Official upstream sources

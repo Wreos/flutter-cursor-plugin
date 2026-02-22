@@ -11,6 +11,3 @@ Run a migration/refactor task.
 4. Use Dart MCP diagnostics to validate each step.
 5. Add or update tests for behavioral changes.
 
-Preconditions and guardrails:
-- Enforce `../docs/prompt-execution-guardrails.md` before execution.
-- Validate outcomes using `../docs/validation-matrix.md`.
